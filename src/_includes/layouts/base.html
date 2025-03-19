@@ -12,12 +12,12 @@
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
         <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}" />
-        <meta property="og:description" content="{{ description }}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}" />
-        <meta property="og:image" content="{{  '/assets/images/logo-small.png' | url }}" />
-        <meta property="og:image:secure_url" content="{{  '/assets/images/logo-small.png' | url }}" />
+        <meta property="og:title" content="{{ title }}"/>
+        <meta property="og:description" content="{{ description }}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
+        <meta property="og:image" content="{{  '/assets/images/logo-small.png' | url }}"/>
+        <meta property="og:image:secure_url" content="{{  '/assets/images/logo-small.png' | url }}"/>
 
         <!--Favicons-->
         <link rel="apple-touch-icon" sizes="180x180" href="{{  '/assets/favicons/apple-touch-icon.png' | url }}">
@@ -34,7 +34,7 @@
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
         {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}" />
+            <link rel="preload" as="image" href="{{ preloadImg }}"/>
         {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->
@@ -46,30 +46,58 @@
         <script defer src="{{  '/assets/js/form.js' | url }}"></script>
 
         <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MMDS7QLL');</script>
-    <!-- End Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer'
+                        ? '&l=' + l
+                        : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f
+                    .parentNode
+                    .insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-MMDS7QLL');
+        </script>
+        <!-- End Google Tag Manager -->
 
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '477293688281070');
-        fbq('track', 'PageView');
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) 
+                    return;
+                n = f.fbq = function () {
+                    n.callMethod
+                        ? n
+                            .callMethod
+                            .apply(n, arguments)
+                        : n
+                            .queue
+                            .push(arguments)
+                };
+                if (!f._fbq) 
+                    f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s
+                    .parentNode
+                    .insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '477293688281070');
+            fbq('track', 'PageView');
         </script>
         <noscript>
             <img height="1" width="1" style="display:none" 
                  src="https://www.facebook.com/tr?id=477293688281070&ev=PageView&noscript=1"/>
-          </noscript>
-
+        </noscript>
 
         {% block head %}{% endblock %}
 
@@ -97,9 +125,11 @@
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMDS7QLL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMDS7QLL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
@@ -112,107 +142,125 @@
 
         <script>
 
-document.addEventListener("DOMContentLoaded", function() {
-    const overlay = document.querySelector(".overlay");
-    const popupImage = document.querySelector(".promo-popup");
+            document.addEventListener("DOMContentLoaded", function () {
+                const overlay = document.querySelector(".overlay");
+                const popupImage = document.querySelector(".promo-popup");
 
-    // Check if the popup has already been shown during this tab session
-    if (!sessionStorage.getItem("promoPopupShown")) {
-        console.log("Popup not shown yet in this tab session. Showing it now...");
+                // Check if the popup has already been shown during this tab session
+                if (!sessionStorage.getItem("promoPopupShown")) {
+                    console.log("Popup not shown yet in this tab session. Showing it now...");
 
-        // Wait for the image to fully load before showing the popup
-        popupImage.onload = function() {
-            console.log("Image fully loaded.");
+                    // Wait for the image to fully load before showing the popup
+                    popupImage.onload = function () {
+                        console.log("Image fully loaded.");
 
-            // Show the overlay with a slight delay
-            setTimeout(() => {
-                overlay.classList.add("active");
-                document.body.style.overflow = "hidden"; // Disable body scroll
+                        // Show the overlay with a slight delay
+                        setTimeout(() => {
+                            overlay
+                                .classList
+                                .add("active");
+                            document.body.style.overflow = "hidden"; // Disable body scroll
 
-                // Show the popup after the overlay is visible
-                setTimeout(() => {
-                    popupImage.classList.add("active");
-                    if (typeof AOS !== "undefined") {
-                        AOS.refresh();
-                        console.log("AOS refreshed.");
+                            // Show the popup after the overlay is visible
+                            setTimeout(() => {
+                                popupImage
+                                    .classList
+                                    .add("active");
+                                if (typeof AOS !== "undefined") {
+                                    AOS.refresh();
+                                    console.log("AOS refreshed.");
+                                }
+                            }, 400); // Popup delay
+                        }, 500); // Overlay delay
+                    };
+
+                    // Set a flag in session storage to indicate that the popup has been shown
+                    sessionStorage.setItem("promoPopupShown", "true");
+                }
+
+                // Close the overlay if the user clicks outside the popup
+                overlay.addEventListener("click", function (e) {
+                    if (e.target === overlay) {
+                        overlay
+                            .classList
+                            .remove("active");
+                        popupImage
+                            .classList
+                            .remove("active");
+                        document.body.style.overflow = ""; // Re-enable body scroll
+                        console.log("Popup closed by clicking outside.");
                     }
-                }, 400); // Popup delay
-            }, 500); // Overlay delay
-        };
-
-        // Set a flag in session storage to indicate that the popup has been shown
-        sessionStorage.setItem("promoPopupShown", "true");
-    }
-
-    // Close the overlay if the user clicks outside the popup
-    overlay.addEventListener("click", function(e) {
-        if (e.target === overlay) {
-            overlay.classList.remove("active");
-            popupImage.classList.remove("active");
-            document.body.style.overflow = ""; // Re-enable body scroll
-            console.log("Popup closed by clicking outside.");
-        }
-    });
-});
-
+                });
+            });
         </script>
 
+        <style>
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                display: none;
+                /* Hidden by default */
+                align-items: center;
+                justify-content: center;
+                z-index: 100000;
+                overflow: hidden;
+                /* Disable scrolling */
+                opacity: 0;
+                /* Start invisible */
+                transition: opacity 0.5s ease;
+                /* Smooth fade-in */
+            }
 
-<style>
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: none; /* Hidden by default */
-    align-items: center;
-    justify-content: center;
-    z-index: 100000;
-    overflow: hidden; /* Disable scrolling */
-    opacity: 0; /* Start invisible */
-    transition: opacity 0.5s ease; /* Smooth fade-in */
-}
+            .overlay.active {
+                display: flex;
+                opacity: 1;
+                /* Smooth fade-in */
+            }
 
-.overlay.active {
-    display: flex;
-    opacity: 1; /* Smooth fade-in */
-}
+            .promo-popup {
+                opacity: 0;
+                transform: scale(0.8);
+                /* Start smaller */
+                transition: opacity 0.6s ease, transform 0.6s ease;
+                /* Smooth fade-in and scale-up */
+                max-width: 90%;
+                /* Limits the width to 90% of the container */
+                height: auto;
+                /* Maintain the aspect ratio */
+                width: auto;
+                /* Adjust width automatically */
+                max-height: 80vh;
+                /* Limits the height to 80% of the viewport */
+                margin: auto;
+                /* Center the image */
+            }
 
-.promo-popup {
-    opacity: 0;
-    transform: scale(0.8); /* Start smaller */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth fade-in and scale-up */
-    max-width: 90%; /* Limits the width to 90% of the container */
-    height: auto; /* Maintain the aspect ratio */
-    width: auto; /* Adjust width automatically */
-    max-height: 80vh; /* Limits the height to 80% of the viewport */
-    margin: auto; /* Center the image */
-}
+            .promo-popup.active {
+                opacity: 1;
+                transform: scale(1);
+                /* Scale to full size smoothly */
+            }
 
-.promo-popup.active {
-    opacity: 1;
-    transform: scale(1); /* Scale to full size smoothly */
-}
+            @media (max-width: 600px) {
+                .promo-popup {
+                    max-width: 100%;
+                    /* Use full width on very small screens */
+                    max-height: 60vh;
+                    /* Limit height further on smaller screens */
+                }
+            }
+        </style>
 
-@media (max-width: 600px) {
-    .promo-popup {
-        max-width: 100%; /* Use full width on very small screens */
-        max-height: 60vh; /* Limit height further on smaller screens */
-    }
-}
- 
-
-</style>
-
-<div class="overlay aos-init aos-animate" data-aos="fade-in">
-    <a href="https://calendly.com/rentals-sunningdaleheights/30min?month=2024-10">
-        <img src="{{ '/assets/images/Sunningdale_Fall Promo-min (1).png' | url }}" 
+        <div class="overlay aos-init aos-animate" data-aos="fade-in">
+            <span>
+                <img src="{{ '/assets/images/Sunningdale_Fall Promo-min (1).png' | url }}" 
              class="promo-popup" alt="Fall Promo">
-    </a>
-</div>
-
+            </span>
+        </div>
 
     </body>
 </html>

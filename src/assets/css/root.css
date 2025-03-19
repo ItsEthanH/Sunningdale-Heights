@@ -21,95 +21,88 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
   .cs-topper {
+    display: block;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: block;
+    text-align: inherit;
   }
   .cs-title {
-    font-size: var(--headerFontSize);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 43.75rem;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
     position: relative;
+    margin: 0 0 1rem 0;
+    max-width: 43.75rem;
+    font-size: var(--headerFontSize);
+    line-height: 1.2em;
+    font-weight: 900;
+    color: var(--headerColor);
+    text-align: inherit;
   }
   .cs-text {
+    margin: 0;
+    max-width: 40.625rem;
+    width: 100%;
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0;
     color: var(--bodyTextColor);
+    text-align: inherit;
   }
   .cs-bullet-list {
-    width: 100%;
-    max-width: 39.375rem;
-    margin: 0 0 2rem 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 0 2rem 0;
+    max-width: 39.375rem;
+    width: 100%;
+    padding: 0;
     gap: 1.5rem;
   }
   .cs-bullet-list .cs-li {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
   }
   .cs-bullet-list .cs-h3 {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-    color: var(--headerColor);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--headerColor);
     gap: 0.75rem;
   }
   .cs-bullet-list .cs-icon {
-    width: 1.0625rem;
-    height: auto;
     margin-top: 0.25rem;
+    height: auto;
+    width: 1.0625rem;
   }
   .cs-bullet-list .cs-item-text {
+    margin: 0;
     font-size: 1rem;
     line-height: 1.5em;
     color: var(--bodyTextColor);
-    margin: 0;
   }
   .cs-button-solid {
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 3.5em;
-    text-align: center;
-    text-decoration: none;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    background-color: var(--primary);
     width: auto;
     padding: 0 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 3.5em;
+    font-weight: bold;
     color: #000;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
     transition: color 0.3s;
     transition-delay: 0.1s;
-    border:none;
+    text-align: center;
   }
-  #current-1150 option {
-      color:black;
-  }
- #referral-1150 option {
-    color:black;
-}
   .cs-button-solid:hover {
     color: #fff;
   }
@@ -117,21 +110,77 @@
     width: 100%;
   }
   .cs-button-solid:before {
-    content: "";
-    width: 0;
-    height: 100%;
-    background-color: #000;
-    opacity: 1;
-    display: block;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    content: "";
+    opacity: 1;
+    display: block;
+    background-color: #000;
+    height: 100%;
+    width: 0;
     transition: width 0.3s;
   }
 }
 /* Fonts and general styles */
 @media only screen and (min-width: 0em) {
+  body,
+  html {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 100%;
+    color: var(--bodyTextColor);
+  }
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  body {
+    transition: background-color 0.3s;
+  }
+  .container {
+    position: relative;
+    margin: auto;
+    width: 92%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: var(--headerColor);
+  }
+  p,
+  li,
+  a {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+  p,
+  li {
+    color: #353535;
+  }
+  a:hover,
+  button:hover {
+    cursor: pointer;
+  }
+  .skip {
+    z-index: -1111111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
   /* roboto-regular - latin */
   @font-face {
     font-style: normal;
@@ -159,62 +208,6 @@
     src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  body,
-  html {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    color: var(--bodyTextColor);
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-  *,
-  *:before,
-  *:after {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-  }
-  body {
-    transition: background-color 0.3s;
-  }
-  .container {
-    width: 92%;
-    margin: auto;
-    position: relative;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    color: var(--headerColor);
-  }
-  p,
-  li,
-  a {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0;
-  }
-  p,
-  li {
-    color: #353535;
-  }
-  a:hover,
-  button:hover {
-    cursor: pointer;
-  }
-  .skip {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1111111;
-  }
 }
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
@@ -237,12 +230,12 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #dark-mode-toggle .cs-sun {
-    transform: translate(-50%, -50%);
     opacity: 1;
+    transform: translate(-50%, -50%);
   }
   body.dark-mode #dark-mode-toggle .cs-moon {
-    transform: translate(-50%, -150%);
     opacity: 0;
+    transform: translate(-50%, -150%);
   }
   body.scroll #dark-mode-toggle {
     bottom: 0.8125rem;
@@ -254,17 +247,17 @@
     fill: #1a1a1a;
   }
   #dark-mode-toggle {
-    display: block;
+    z-index: 1000;
     position: absolute;
     bottom: 1.75rem;
     right: 4.75rem;
-    width: 3rem;
-    height: 3rem;
-    background: transparent;
+    display: block;
     border: none;
+    background: transparent;
+    height: 3rem;
+    width: 3rem;
     overflow: hidden;
     padding: 0;
-    z-index: 1000;
   }
   #dark-mode-toggle img,
   #dark-mode-toggle svg {
@@ -272,8 +265,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1.25rem;
     height: 1.25rem;
+    width: 1.25rem;
     pointer-events: none;
   }
   #dark-mode-toggle .cs-moon {
@@ -283,8 +276,8 @@
   }
   #dark-mode-toggle .cs-sun {
     z-index: 1;
-    transform: translate(-50%, 100%);
     opacity: 0;
+    transform: translate(-50%, 100%);
     transition: transform 0.3s, opacity 0.3s;
   }
 }
@@ -298,9 +291,9 @@
   }
   #dark-mode-toggle {
     position: relative;
-    transform: none;
     bottom: auto;
     right: auto;
+    transform: none;
     margin: 0;
   }
   #dark-mode-toggle:hover {
@@ -312,33 +305,8 @@
 <--- -------------------------- -*/
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-0.5rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  @keyframes floatAnimation2 {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-0.7rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
   body.cs-open {
     overflow: hidden;
-  }
-  body.cs-open #cs-navigation:before {
-    height: 100%;
   }
   body.cs-open #cs-navigation .cs-toggle:before {
     top: 0px;
@@ -357,14 +325,14 @@
     color: var(--headerColor);
   }
   body.cs-open #cs-navigation .cs-default {
-    transform: rotateX(180deg);
     opacity: 0;
+    transform: rotateX(180deg);
   }
   body.cs-open #cs-navigation .cs-onscroll {
-    transform: rotateX(360deg);
     opacity: 1;
+    transform: rotateX(360deg);
   }
-  body.scroll #cs-navigation:before {
+  body.cs-open #cs-navigation:before {
     height: 100%;
   }
   body.scroll #cs-navigation .cs-top-bar {
@@ -377,80 +345,55 @@
     height: 3.125rem;
   }
   body.scroll #cs-navigation .cs-default {
-    transform: rotateX(180deg);
     opacity: 0;
+    transform: rotateX(180deg);
   }
   body.scroll #cs-navigation .cs-onscroll {
-    transform: rotateX(360deg);
     opacity: 1;
+    transform: rotateX(360deg);
+  }
+  body.scroll #cs-navigation:before {
+    height: 100%;
   }
   #cs-navigation {
+    z-index: 10000;
+    position: fixed;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    position: fixed;
-    z-index: 10000;
-  }
-  #cs-navigation:before {
-    /* on scroll background */
-    content: "";
-    width: 100%;
-    height: 0%;
-    background: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: height 0.3s;
-  }
-  #cs-navigation.cs-active:before {
-    height: 150vh;
-    opacity: 1;
-  }
-  #cs-navigation.cs-active .cs-ul-wrapper {
-    opacity: 1;
-    transform: scaleY(1);
-    transition-delay: 0.15s;
-  }
-  #cs-navigation.cs-active .cs-li {
-    transform: translateY(0);
-    opacity: 1;
   }
   #cs-navigation .cs-top-bar {
-    width: 100%;
-    height: 3.3125rem;
-    overflow: hidden;
+    z-index: 1;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    height: 3.3125rem;
+    width: 100%;
+    overflow: hidden;
     transition: height 0.3s;
   }
   #cs-navigation .cs-top-bar:before {
-    /* divider line */
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    opacity: 0.1;
     position: absolute;
-    display: block;
     bottom: 0;
     left: 0;
+    /* divider line */
+    content: "";
+    opacity: 0.1;
+    display: block;
+    background: #fff;
+    height: 1px;
+    width: 100%;
     transition: background-color 0.3s;
   }
   #cs-navigation .cs-top-container {
-    width: 100%;
-    padding: 1rem;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 1rem;
     gap: 3.125rem;
   }
   #cs-navigation .cs-top-contact {
@@ -460,49 +403,49 @@
     gap: 1.5rem;
   }
   #cs-navigation .cs-top-link {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    text-decoration: none;
-    margin: 0;
-    color: #f7f7f7;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    margin: 0;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #f7f7f7;
     transition: opacity 0.3s, color 0.3s;
+    gap: 0.5rem;
   }
   #cs-navigation .cs-link-icon {
-    width: 1rem;
-    height: auto;
     display: block;
+    height: auto;
+    width: 1rem;
   }
   #cs-navigation .cs-container {
-    width: 100%;
-    padding: 1rem;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  #cs-navigation .cs-logo {
-    width: auto;
-    height: 4.375rem;
-    margin: 0 auto 0 0;
-    padding: 0;
+    width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    padding: 1rem;
+  }
+  #cs-navigation .cs-logo {
     z-index: 10;
     transform-style: preserve-3d;
     perspective: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto 0 0;
+    height: 4.375rem;
+    width: auto;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 0;
     transition: height 0.3s;
   }
   #cs-navigation .cs-logo img {
-    width: auto;
     height: 100%;
+    width: auto;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -513,74 +456,74 @@
     transition: opacity 0.3s, transform 0.6s;
   }
   #cs-navigation .cs-onscroll {
-    width: 100%;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    opacity: 0;
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
+    opacity: 0;
     transform: rotateX(180deg);
+    width: 100%;
     transition: opacity 0.3s, transform 0.6s;
   }
   #cs-navigation .cs-top-logo {
     display: none;
   }
   #cs-navigation .cs-toggle {
-    width: 3rem;
-    height: 3rem;
-    margin: 0 0 0 auto;
-    background-color: var(--primary);
-    border-radius: 50%;
-    border: none;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    border: none;
+    border-radius: 50%;
+    margin: 0 0 0 auto;
+    background-color: var(--primary);
+    height: 3rem;
+    width: 3rem;
   }
   #cs-navigation .cs-toggle:before {
-    /* floating bubble when opened */
-    content: "";
-    width: 70%;
-    height: 70%;
-    border-radius: 50%;
-    border: 1px solid #000;
-    opacity: 0;
+    z-index: -1;
     position: absolute;
-    display: block;
     top: 4px;
     left: 4px;
-    z-index: -1;
+    /* floating bubble when opened */
+    content: "";
+    opacity: 0;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 70%;
+    width: 70%;
+    transition: left 0.6s, top 0.3s, opacity 0.6s;
+    transition-delay: 0.2s;
     animation-name: floatAnimation;
     animation-duration: 7s;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    transition: left 0.6s, top 0.3s, opacity 0.6s;
-    transition-delay: 0.2s;
+    animation-fill-mode: forwards;
   }
   #cs-navigation .cs-toggle:after {
-    /* floating bubble when opened */
-    content: "";
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    border: 1px solid #000;
-    opacity: 0;
+    z-index: -1;
     position: absolute;
-    display: block;
     bottom: 4px;
     right: 4px;
-    z-index: -1;
+    /* floating bubble when opened */
+    content: "";
+    opacity: 0;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
     transition: bottom 0.6s, right 0.3s, opacity 0.6s;
+    transition-delay: 0.3s;
     animation-name: floatAnimation2;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    transition-delay: 0.3s;
+    animation-fill-mode: forwards;
   }
   #cs-navigation .cs-active .cs-line1 {
     top: 50%;
@@ -588,36 +531,36 @@
   }
   #cs-navigation .cs-active .cs-line2 {
     top: 50%;
-    transform-origin: center;
     transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
+    transform-origin: center;
   }
   #cs-navigation .cs-active .cs-line3 {
     bottom: 100%;
     opacity: 0;
   }
   #cs-navigation .cs-box {
+    position: relative;
+    height: 1rem;
     /* 24px - 28px */
     width: clamp(1.5rem, 2vw, 1.75rem);
-    height: 1rem;
-    position: relative;
   }
   #cs-navigation .cs-line {
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #fafbfc;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 2px;
+    background-color: #fafbfc;
+    height: 2px;
+    width: 100%;
   }
   #cs-navigation .cs-line1 {
     top: 0;
-    transform-origin: center;
     transition: transform 0.5s, top 0.3s, left 0.3s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
-    animation-fill-mode: forwards;
     animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform-origin: center;
   }
   #cs-navigation .cs-line2 {
     top: 50%;
@@ -625,52 +568,52 @@
     transition: top 0.3s, left 0.3s, transform 0.5s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
-    animation-fill-mode: forwards;
     animation-direction: normal;
+    animation-fill-mode: forwards;
   }
   #cs-navigation .cs-line3 {
     bottom: 0;
     transition: bottom 0.3s, opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
-    width: 100%;
-    height: auto;
-    padding-bottom: 3rem;
-    opacity: 0;
-    background-color: #fff;
-    box-shadow: inset rgba(0, 0, 0, 0.05) 0px 8px 24px, rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 0 0 1.25rem 1.25rem;
-    overflow: hidden;
+    z-index: -1;
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: -1;
+    opacity: 0;
     transform: scaleY(0);
-    transform-origin: top;
+    border-radius: 0 0 1.25rem 1.25rem;
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 3rem;
     transition: transform 0.4s, opacity 0.3s;
+    box-shadow: inset rgba(0, 0, 0, 0.05) 0px 8px 24px, rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform-origin: top;
   }
   #cs-navigation .cs-ul {
-    margin: 0;
-    padding: 3rem 0 0 0;
-    width: 100%;
-    height: auto;
-    max-height: 65vh;
-    overflow: scroll;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    margin: 0;
+    max-height: 65vh;
+    height: auto;
+    width: 100%;
+    overflow: scroll;
+    padding: 3rem 0 0 0;
     gap: 1.25rem;
   }
   #cs-navigation .cs-li {
-    width: 100%;
-    text-align: center;
-    list-style: none;
-    margin-right: 0;
+    opacity: 0;
     /* transition from these values */
     transform: translateY(-4.375rem);
-    opacity: 0;
+    margin-right: 0;
+    width: 100%;
+    list-style: none;
     transition: transform 0.6s, opacity 0.9s;
+    text-align: center;
   }
   #cs-navigation .cs-li:nth-of-type(1) {
     transition-delay: 0.05s;
@@ -712,30 +655,77 @@
     transition-delay: 0.65s;
   }
   #cs-navigation .cs-li-link {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
     /* 16px - 24px */
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     line-height: 1.2em;
-    text-decoration: none;
-    margin: 0;
     color: var(--headerColor);
-    display: inline-block;
-    position: relative;
-  }
-  #cs-navigation .cs-li-link.cs-active {
-    color: var(--primary);
   }
   #cs-navigation .cs-li-link:hover {
+    color: var(--primary);
+  }
+  #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
   }
   #cs-navigation .cs-button-solid {
     display: none;
   }
+  #cs-navigation:before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* on scroll background */
+    content: "";
+    opacity: 1;
+    display: block;
+    background: #fff;
+    height: 0%;
+    width: 100%;
+    transition: height 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #cs-navigation.cs-active .cs-ul-wrapper {
+    opacity: 1;
+    transform: scaleY(1);
+    transition-delay: 0.15s;
+  }
+  #cs-navigation.cs-active .cs-li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #cs-navigation.cs-active:before {
+    opacity: 1;
+    height: 150vh;
+  }
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes floatAnimation2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.7rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 /* Dark Mode */
 @media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation:before {
-    background-color: var(--dark);
-  }
   body.dark-mode #cs-navigation .cs-top-bar:before {
     background-color: #fff;
   }
@@ -756,21 +746,24 @@
   body.dark-mode #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
   }
+  body.dark-mode #cs-navigation:before {
+    background-color: var(--dark);
+  }
   body.dark-mode.scroll #cs-navigation .cs-default {
-    transform: rotateX(0deg);
     opacity: 1;
+    transform: rotateX(0deg);
   }
   body.dark-mode.scroll #cs-navigation .cs-onscroll {
-    transform: rotateX(180deg);
     opacity: 0;
+    transform: rotateX(180deg);
   }
   body.dark-mode.cs-open #cs-navigation .cs-default {
-    transform: rotateX(0deg);
     opacity: 1;
+    transform: rotateX(0deg);
   }
   body.dark-mode.cs-open #cs-navigation .cs-onscroll {
-    transform: rotateX(180deg);
     opacity: 0;
+    transform: rotateX(180deg);
   }
 }
 /*-- -------------------------- -->
@@ -779,19 +772,23 @@
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   #cs-navigation .cs-li {
-    text-align: center;
-    width: 100%;
     display: block;
+    width: 100%;
+    text-align: center;
   }
   #cs-navigation .cs-dropdown {
     position: relative;
     color: var(--bodyTextColorWhite);
   }
+  #cs-navigation .cs-dropdown .cs-li-link {
+    position: relative;
+    transition: opacity 0.3s;
+  }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
-    height: auto;
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
     margin: 0.75rem 0 0 0;
+    height: auto;
     padding: 0.75rem 0;
   }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-link {
@@ -800,36 +797,32 @@
   #cs-navigation .cs-dropdown.cs-active .cs-drop-icon {
     transform: translateY(-50%) rotate(-90deg);
   }
-  #cs-navigation .cs-dropdown .cs-li-link {
-    position: relative;
-    transition: opacity 0.3s;
-  }
   #cs-navigation .cs-drop-icon {
-    width: 1.5rem;
-    height: auto;
-    /* makes it black */
-    filter: grayscale(1) brightness(20%);
     position: absolute;
     top: 50%;
     right: -1.5rem;
     transform: translateY(-50%);
+    height: auto;
+    width: 1.5rem;
+    /* makes it black */
+    filter: grayscale(1) brightness(20%);
     transition: transform 0.2s;
   }
   #cs-navigation .cs-drop-ul {
-    width: 100%;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary);
-    overflow: hidden;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    gap: 0.75rem;
+    margin: 0;
+    background-color: var(--primary);
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
     transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, visibility 0.3s;
+    gap: 0.75rem;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -848,10 +841,6 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  .cs-container.announcement .cs-content a {
-    font-size:1.2rem;
-    font-weight: bold;
-  }
   #cs-navigation .cs-li:hover .cs-drop-icon {
     transform: rotate(-90deg);
   }
@@ -862,49 +851,49 @@
     cursor: pointer;
   }
   #cs-navigation .cs-dropdown:hover .cs-drop-ul {
-    transform: scaleY(1);
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
   }
   #cs-navigation .cs-dropdown:hover .cs-drop-li {
     opacity: 1;
     transform: translateY(0);
   }
   #cs-navigation .cs-drop-icon {
-    width: 1.5rem;
-    height: auto;
     display: inline-block;
+    height: auto;
+    width: 1.5rem;
     transition: transform 0.3s;
   }
   #cs-navigation .cs-drop-ul {
-    min-width: 12.5rem;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
-    border-bottom: 5px solid var(--primary);
-    border-radius: 0 0 0.625rem 0.625rem;
-    box-sizing: border-box;
+    z-index: -100;
     /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
     position: absolute;
     top: 100%;
-    z-index: -100;
+    visibility: hidden;
+    opacity: 0;
     transform: scaleY(0);
-    transform-origin: top;
+    border-bottom: 5px solid var(--primary);
+    border-radius: 0 0 0.625rem 0.625rem;
+    margin: 0;
+    background-color: #fff;
+    min-width: 12.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
     transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
+    transform-origin: top;
   }
   #cs-navigation .cs-drop-li {
-    list-style: none;
-    font-size: 1rem;
-    text-decoration: none;
     opacity: 0;
-    width: 100%;
-    height: auto;
-    display: block;
     transform: translateY(-10/16rem);
+    display: block;
+    height: auto;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
     transition: opacity 0.6s, transform 0.6s;
   }
   #cs-navigation .cs-drop-li:nth-of-type(1) {
@@ -947,16 +936,16 @@
     transition-delay: 0.65s;
   }
   #cs-navigation .cs-li-link.cs-drop-link {
-    font-size: 1rem;
-    white-space: nowrap;
-    line-height: 1.5em;
-    text-decoration: none;
+    display: block;
     width: 100%;
-    padding: 0.75rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
+    padding: 0.75rem;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5em;
     color: var(--headerColor);
-    display: block;
     transition: color 0.3s, background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
@@ -990,20 +979,8 @@
     /* translate the whole navigation UP by the exact same height as the cs-top-bar (86px) so we can get that off screen and not have a tall clunky navbar. Then we translate the cs-logo DOWN so it lowers itself to be positioned centered in the cs-container, when it's not. It's just an illusion we create */
     transform: translateY(-6rem);
   }
-  body.scroll #cs-navigation .cs-container.announcement {
-    /* translate the whole navigation UP by the exact same height as the cs-top-bar (86px) so we can get that off screen and not have a tall clunky navbar. Then we translate the cs-logo DOWN so it lowers itself to be positioned centered in the cs-container, when it's not. It's just an illusion we create */
-    transform: translateY(6rem);
-  }
-  body.scroll #cs-navigation .cs-top-contact {
-    /* translate the whole navigation UP by the exact same height as the cs-top-bar (86px) so we can get that off screen and not have a tall clunky navbar. Then we translate the cs-logo DOWN so it lowers itself to be positioned centered in the cs-container, when it's not. It's just an illusion we create */
-    opacity:0;
-    visibility: hidden;
-  }
-  body.scroll #cs-navigation:before {
-    height: 100%;
-  }
   body.scroll #cs-navigation .cs-button-solid {
-    transform: translateY(5.22rem);
+    transform: translateY(5.22rem) translateX(-4.3rem);
   }
   body.scroll #cs-navigation .cs-logo {
     transform: translateY(5.2rem);
@@ -1012,12 +989,12 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
   body.scroll #cs-navigation .cs-default {
-    transform: rotateX(180deg);
     opacity: 0;
+    transform: rotateX(180deg);
   }
   body.scroll #cs-navigation .cs-onscroll {
-    transform: rotateX(360deg);
     opacity: 1;
+    transform: rotateX(360deg);
   }
   body.scroll #cs-navigation .cs-top-link {
     color: var(--headerColor);
@@ -1037,128 +1014,116 @@
   body.scroll #cs-navigation .cs-drop-icon {
     filter: grayscale(1) brightness(0);
   }
+  body.scroll #cs-navigation:before {
+    height: 100%;
+  }
   #cs-navigation {
+    z-index: 10000;
+    position: fixed;
     width: 100%;
-    padding: 0;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    position: fixed;
-    z-index: 10000;
+    padding: 0;
     transition: transform 0.3s;
   }
-  #cs-navigation:before {
-    /* on scroll background */
-    content: "";
-    width: 100%;
-    height: 0%;
-    background: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: height 0.3s;
-  }
   #cs-navigation .cs-top-bar {
-    width: 100%;
+    z-index: 1;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    width: 100%;
   }
   #cs-navigation .cs-top-bar:before {
-    /* divider line */
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    opacity: 0.1;
     position: absolute;
-    display: block;
     bottom: 0;
     left: 0;
+    /* divider line */
+    content: "";
+    opacity: 0.1;
+    display: block;
+    background: #fff;
+    height: 1px;
+    width: 100%;
   }
   #cs-navigation .cs-top-container {
-    width: 100%;
-    max-width: 80rem;
-    padding: 1.25rem 0;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 80rem;
+    width: 100%;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 1.25rem 0;
     gap: 3.125rem;
-    position: relative;
-    z-index: 1;
   }
   #cs-navigation .cs-top-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
   #cs-navigation .cs-top-link {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-decoration: none;
-    margin: 0;
-    color: #f7f7f7;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #f7f7f7;
     transition: color 0.3s;
+    gap: 0.5rem;
   }
   #cs-navigation .cs-top-link:hover {
     text-decoration: underline;
   }
   #cs-navigation .cs-link-icon {
-    width: 1rem;
-    height: auto;
     display: block;
+    height: auto;
+    width: 1rem;
   }
   #cs-navigation .cs-container {
-    width: 100%;
-    /* same height as the cs-ul-wrapper */
-    height: 4.5rem;
-    max-width: 80rem;
-    margin: auto;
-    /* prevents padding from affectin gheight */
-    box-sizing: border-box;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: auto;
+    /* same height as the cs-ul-wrapper */
+    height: 4.5rem;
+    max-width: 80rem;
+    width: 100%;
+    /* prevents padding from affectin gheight */
+    box-sizing: border-box;
     gap: 1.5rem;
-    position: relative;
   }
   #cs-navigation .cs-toggle {
     display: none;
   }
   #cs-navigation .cs-logo {
-    width: 18.4%;
-    height: 3.75rem;
-    /* margin-right auto pushes everything away from it to the right */
-    margin: 0 auto 0 0;
-    padding: 0;
+    z-index: 100;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 500px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    position: relative;
-    perspective: 500px;
-    transform-style: preserve-3d;
-    z-index: 100;
+    /* margin-right auto pushes everything away from it to the right */
+    margin: 0 auto 0 0;
+    height: 3.75rem;
+    width: 18.4%;
+    padding: 0;
     transition: transform 0.3s;
   }
   #cs-navigation .cs-logo img {
-    width: auto;
     height: 100%;
+    width: auto;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -1169,16 +1134,16 @@
     transition: opacity 0.3s, transform 0.6s;
   }
   #cs-navigation .cs-onscroll {
-    width: 100%;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    opacity: 0;
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
+    opacity: 0;
     transform: rotateX(180deg);
+    width: 100%;
     transition: opacity 0.3s, transform 0.6s;
   }
   #cs-navigation .cs-bottom-logo {
@@ -1187,36 +1152,36 @@
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
   #cs-navigation .cs-ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
     /* 20px - 36px */
     gap: clamp(1.25rem, 2.6vw, 1.75rem);
   }
   #cs-navigation .cs-li {
-    list-style: none;
     padding: 1.5rem 0;
+    list-style: none;
     /* prevent flexbox from squishing it */
     flex: none;
   }
   #cs-navigation .cs-li-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
     /* 14px - 16px */
     font-size: clamp(0.875rem, 0.6vw, 1rem);
     line-height: 1.5rem;
-    text-decoration: none;
-    margin: 0;
     color: var(--bodyTextColorWhite);
-    display: flex;
-    align-items: center;
-    position: relative;
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
@@ -1228,22 +1193,31 @@
   #cs-navigation .cs-nav-button {
     transition: color 0.3s, transform 0.3s;
   }
+  #cs-navigation:before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* on scroll background */
+    content: "";
+    opacity: 1;
+    display: block;
+    background: #fff;
+    height: 0%;
+    width: 100%;
+    transition: height 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
 }
 /* Dark Mode - 1024px */
 @media only screen and (min-width: 64rem) {
-  body.dark-mode.scroll #cs-navigation .cs-li.cs-dropdown .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation:before {
-    background-color: var(--dark);
-  }
   body.dark-mode #cs-navigation .cs-default {
-    transform: rotateX(0deg);
     opacity: 1;
+    transform: rotateX(0deg);
   }
   body.dark-mode #cs-navigation .cs-onscroll {
-    transform: rotateX(180deg);
     opacity: 0;
+    transform: rotateX(180deg);
   }
   body.dark-mode #cs-navigation .cs-top-bar:before {
     background-color: #fff;
@@ -1261,6 +1235,12 @@
   body.dark-mode #cs-navigation .cs-drop-icon {
     filter: none;
   }
+  body.dark-mode #cs-navigation:before {
+    background-color: var(--dark);
+  }
+  body.dark-mode.scroll #cs-navigation .cs-li.cs-dropdown .cs-li-link {
+    color: var(--bodyTextColorWhite);
+  }
 }
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -1268,62 +1248,62 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #int-hero {
-    min-height: 30vh;
-    padding-top: 3.125rem;
+    z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-  #int-hero:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.7;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    min-height: 30vh;
+    padding-top: 3.125rem;
   }
   #int-hero picture {
-    width: 100%;
-    height: 100%;
+    z-index: -2;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
+    height: 100%;
+    width: 100%;
   }
   #int-hero picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   #int-hero h1 {
-    font-size: 2.13333333rem;
-    text-align: center;
-    width: 96%;
-    max-width: 31.25rem;
+    position: relative;
     margin: 0 auto;
     margin-top: 4.375rem;
     margin-bottom: 1.875rem;
+    max-width: 31.25rem;
+    width: 96%;
+    font-size: 2.13333333rem;
     color: #fff;
-    position: relative;
+    text-align: center;
   }
   #int-hero p {
-    text-align: center;
-    width: 96%;
-    max-width: 25rem;
+    display: block;
     margin: auto;
     margin-bottom: 1.875rem;
+    max-width: 25rem;
+    width: 96%;
     color: #fff;
+    text-align: center;
+  }
+  #int-hero:before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.7;
     display: block;
+    background: #000;
+    height: 100%;
+    width: 100%;
   }
 }
 /* Tablet */
@@ -1338,180 +1318,252 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #int-hero {
-    font-size: inherit;
-    height: auto;
-    min-height: 18.75rem;
-    padding-top: 11.25rem;
     background-attachment: fixed;
+    min-height: 18.75rem;
+    height: auto;
+    padding-top: 11.25rem;
+    font-size: inherit;
     padding-block-end: 6.25rem;
   }
 }
+/*-- -------------------------- -->
+<---          Mobile Button     -->
+<--- -------------------------- -*/
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #footer-1391 {
+  #cs-footer-840 {
+    background-color: #1a1a1a;
     padding: var(--sectionPadding);
-    background-color: var(--secondary);
-    padding-bottom: 3.75rem;
-    position: relative;
-    z-index: 1;
+    /* 30px - 50px */
+    padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
   }
-  #footer-1391 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #footer-1391 .cs-top {
-    width: 100%;
-    margin-bottom: 2.5rem;
-    /* 24px - 64px */
-    padding-bottom: clamp(1.5rem, 5vw, 4rem);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* 24px - 40px */
-    gap: clamp(1.25rem, 4vw, 2.5rem);
-  }
-  #footer-1391 .cs-ul {
-    margin: 0;
-    padding: 0;
+  #cs-footer-840 .cs-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    row-gap: 0.5rem;
-    /* 24px - 36px */
-    column-gap: clamp(1.5rem, 4vw, 2.25rem);
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    /* reset on tablet */
+    max-width: 34.375rem;
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 2rem;
   }
-  #footer-1391 .cs-li {
+  #cs-footer-840 .cs-logo-group {
+    position: relative;
+    /* takes up all the space, lets the other ul's wrap below it */
+    width: 100%;
+  }
+  #cs-footer-840 .cs-logo {
+    display: block;
+    margin: 0 0 1.5rem 0;
+    height: auto;
+    width: 13.125rem;
+  }
+  #cs-footer-840 .cs-text {
+    opacity: 0.8;
+    margin: 0 0 2rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #cs-footer-840 .cs-logo-img {
+    height: auto;
+    width: 100%;
+  }
+  #cs-footer-840 .cs-social {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 0.75em;
+  }
+  #cs-footer-840 .cs-social-link {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #484848;
+    height: 2rem;
+    width: 2rem;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  #cs-footer-840 .cs-social-link:hover {
+    transform: translateY(-0.1875rem);
+    background-color: var(--primaryLight);
+  }
+  #cs-footer-840 .cs-social-link:hover .cs-social-img {
+    filter: grayscale(1) brightness(1000%);
+  }
+  #cs-footer-840 .cs-social-img {
+    display: block;
+    height: 0.75rem;
+    width: auto;
+  }
+  #cs-footer-840 .cs-header {
+    position: relative;
+    display: block;
+    margin: 0 0 1.25rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+  }
+  #cs-footer-840 .cs-ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+  }
+  #cs-footer-840 .cs-ul-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 21.875rem;
+    width: 100%;
+    column-gap: 2rem;
+  }
+  #cs-footer-840 .cs-ul-1 .cs-li {
+    width: 44%;
+  }
+  #cs-footer-840 .cs-li {
     list-style: none;
   }
-  #footer-1391 .cs-link {
+  #cs-footer-840 .cs-link {
+    display: inline-flex;
+    align-items: flex-start;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #bababa;
+    transition: color 0.3s;
+    text-align: left;
+    gap: 0.5rem;
+  }
+  #cs-footer-840 .cs-link:hover {
+    color: var(--primaryLight);
+  }
+  #cs-footer-840 .cs-icon {
+    display: block;
+    margin-right: 0.125rem;
+    height: auto;
+    width: 1.25rem;
+  }
+  #cs-footer-840 .cs-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #484848;
+    /* 48px - 64px */
+    margin: clamp(3rem, 7vw, 4rem) auto 0;
+    max-width: 80rem;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  #cs-footer-840 .cs-credit,
+  #cs-footer-840 .cs-bottom-link,
+  #cs-footer-840 .cs-credit-link {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: auto;
+    text-decoration: none;
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
-    text-decoration: none;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-    display: block;
+    color: #bababa;
     transition: color 0.3s;
   }
-  #footer-1391 .cs-link:hover {
-    color: var(--primary);
-  }
-  #footer-1391 .cs-logo {
+  #cs-footer-840 .cs-credit {
     width: 100%;
-    max-width: 21.875rem;
-    height: auto;
-    display: block;
-    filter: grayscale(1) brightness(1000%);
   }
-  #footer-1391 .cs-logo-img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  #footer-1391 .cs-bottom {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  #footer-1391 .cs-social {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  #footer-1391 .cs-social-li {
-    list-style: none;
-  }
-  #footer-1391 .cs-social-link {
-    width: 2rem;
-    height: 2rem;
-    background-color: #484848;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-  }
-  #footer-1391 .cs-social-link:hover {
-    background-color: var(--primary);
-  }
-  #footer-1391 .cs-social-link:hover .cs-social-icon {
-    filter: grayscale(1) brightness(1000%);
-    opacity: 1;
-  }
-  #footer-1391 .cs-social-icon {
-    width: 0.75rem;
-    height: auto;
-    display: block;
-    transition: opacity 0.3s;
-  }
-  #footer-1391 .cs-copyright {
-    font-size: 1rem;
-    color: var(--bodyTextColorWhite);
-    line-height: 1.5em;
-    margin: 0;
-    display: block;
-  }
-  #footer-1391 .cs-copyright-link,
-  #footer-1391 .cs-separater {
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--bodyTextColorWhite);
-    transition: color 0.3s;
-  }
-  #footer-1391 .cs-copyright-link:hover,
-  #footer-1391 .cs-separater:hover {
-    color: var(--primary);
-  }
-  #footer-1391 .cs-separater {
-    margin: 0 1rem;
+  #cs-footer-840 .cs-credit-link {
+    position: relative;
     display: inline-block;
+    margin: 0;
+    width: auto;
+    text-decoration: none;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: #bababa;
+  }
+  #cs-footer-840 .cs-credit-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-840 .cs-bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #cs-footer-840 .cs-bottom-link {
+    display: flex;
+    align-items: center;
+  }
+  #cs-footer-840 .cs-bottom-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-840 .cs-bottom-link:last-of-type:before {
+    /* separator */
+    content: "";
+    opacity: 1;
+    display: block;
+    margin: 0 0.75rem;
+    background: currentColor;
+    height: 0.875rem;
+    width: 1px;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #footer-1391 .cs-bottom {
+  #cs-footer-840 .cs-container {
+    max-width: 80rem;
+    /* 48px - 64px */
+    row-gap: clamp(3rem, 7vw, 4rem);
+  }
+  #cs-footer-840 .cs-bottom {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  #cs-footer-840 .cs-credit {
+    text-align: left;
+  }
+  #cs-footer-840 .cs-bottom-links {
+    justify-content: flex-end;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cs-footer-840 .cs-container {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    /* pushes all flex children to the top */
+    align-items: flex-start;
+  }
+  #cs-footer-840 .cs-logo-group {
+    /* pushes everything to the right of it as far as possible in a flexbox */
+    margin-right: auto;
+    max-width: 25rem;
+    width: 30%;
+  }
+  #cs-footer-840 .cs-text {
+    width: 100%;
+  }
+  #cs-footer-840 .cs-social {
+    position: relative;
+    top: auto;
+    right: auto;
     flex-direction: row;
-    justify-content: center;
-  }
-  #footer-1391 .cs-flex {
-    margin: 0 auto;
-  }
-  #footer-1391 .cs-social {
-    /* sends it to the right in the 3rd position */
-    order: 3;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #footer-1391 {
+  body.dark-mode #cs-footer-840 {
     background-color: rgba(0, 0, 0, 0.6);
-  }
-  body.dark-mode #footer-1391 .cs-logo {
-    /* turns logo white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #footer-1391 .cs-top {
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  body.dark-mode #footer-1391 .cs-link,
-  body.dark-mode #footer-1391 .cs-copyright,
-  body.dark-mode #footer-1391 .cs-copyright-link {
-    color: var(--bodyTextColorWhite);
-    opacity: 0.8;
   }
 }

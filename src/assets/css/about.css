@@ -48,7 +48,7 @@
     display: block;
   }
   #sbs-1456 .cs-logo-image:nth-of-type(2) {
-    /* max-width: 6.25rem; */
+    max-width: 6.25rem;
   }
   #sbs-1456 .cs-image-group {
     /* scaling the font size with the view width, removed at desktop */

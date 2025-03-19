@@ -187,7 +187,7 @@
     max-width: 80rem;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
   #contact-1150 .cs-contact-group {
     width: 50%;
