@@ -1,0 +1,268 @@
+---
+title: 'Photo Gallery'
+description: 'Photo Gallery'
+permalink: 'gallery/'
+eleventyNavigation:
+    key: Gallery
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ '/assets/css/layouts.css' | url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
+{% endblock %}
+
+{% block body %}
+
+ <!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Gallery</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+        <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+        <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<!--
+    To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
+-->
+
+<section id="gallery-1449">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Gallery</span>
+                <h2 class="cs-title">View photos of our 1 & 2 Bedroom Units!</h2>
+            </div>
+            <div class="cs-button-group">
+                <button class="cs-button" data-filter="all">
+                    All Images
+                </button>
+                <button class="cs-button" data-filter="one-bedroom">
+                    1 Bedroom
+                </button>
+                <button class="cs-button" data-filter="two-bedroom">
+                    2 Bedroom
+                </button>
+            </div>
+        </div>
+
+
+        <div class="cs-gallery">
+            <!-- One-Bedroom Images (1-onebed to 26-onebed) -->
+            <a href="{{ '/assets/images/1-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/1-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/2-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/2-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/3-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/3-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/4-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/4-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/5-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/5-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/6-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/6-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/7-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/7-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/8-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/8-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/9-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/9-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/10-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/10-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/11-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/11-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/12-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/12-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/13-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/13-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/14-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/14-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/15-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/15-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/16-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/16-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/17-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/17-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/18-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/18-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/19-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/19-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/20-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/21-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/21-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/22-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/22-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/23-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/23-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/24-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/24-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/25-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/25-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/26-onebed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/26-onebed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            
+            <!-- Two-Bedroom Images (1-twobed to 28-twobed) -->
+            <a href="{{ '/assets/images/1-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/1-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/2-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/2-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/3-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/3-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/4-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/4-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/5-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/5-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/6-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/6-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/7-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/7-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+           
+            <a href="{{ '/assets/images/13-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/13-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/14-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/14-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/15-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/15-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/16-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/16-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/17-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/17-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/18-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/18-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/19-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/19-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            
+            <a href="{{ '/assets/images/25-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/25-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/26-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/26-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/27-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/27-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            <a href="{{ '/assets/images/28-twobed.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/28-twobed.jpg' | url }}" alt="gallery" width="300" height="300">
+            </a>
+            
+         
+        </div>
+    </div>
+
+
+
+    </div>
+</section>
+ 
+<script>
+    
+    const lightbox = GLightbox({
+    selector: '.glightbox'
+});
+
+class GalleryFilter {
+    filtersSelector = '.cs-button';
+    imagesSelector = '.cs-gallery a';
+    activeClass = 'cs-active';
+    hiddenClass = 'cs-hidden';
+
+    constructor() {
+        const $filters = document.querySelectorAll(this.filtersSelector);
+        this.$activeFilter = $filters[0];
+        this.$images = document.querySelectorAll(this.imagesSelector);
+
+        this.$activeFilter.classList.add(this.activeClass);
+
+        for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter));
+        }
+    }
+
+    onClick($filter) {
+        this.filter($filter.dataset.filter);
+
+        const { activeClass } = this;
+
+        this.$activeFilter.classList.remove(activeClass);
+        $filter.classList.add(activeClass);
+
+        this.$activeFilter = $filter;
+    }
+
+    filter(filter) {
+        const showAll = filter === 'all';
+
+        for (const $image of this.$images) {
+            const category = $image.getAttribute('data-category');
+            const show = showAll || category === filter;
+
+            $image.style.display = show ? 'inline-block' : 'none';
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    new GalleryFilter();
+});
+     
+</script>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

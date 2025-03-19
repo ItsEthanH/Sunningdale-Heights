@@ -1,0 +1,88 @@
+---
+title: 'Virtual Tour'
+description: 'Virtual Tour'
+permalink: 'virtual-tour/'
+eleventyNavigation:
+    key: Virtual Tour
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ '/assets/css/virtual-tour.css' | url }}">
+{% endblock %}
+
+{% block body %}
+
+ <!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Virtual Tour</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+        <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+        <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RPsbs-1445">
+    <div class="cs-container">
+
+        <div class="iframe">
+        <iframe src="https://my.matterport.com/show/?m=cx6tKM6egCF" width="100%" height="400px" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+
+    </div>
+        <div class="cs-content">
+            <span class="cs-topper">Virtual Tour</span>
+            <h2 class="cs-title">1 Bedroom / 1 Bathroom</h2>
+             
+ 
+            <div class="btn-group">
+                 <a href="/layouts" class="cs-button-solid" data-aos="fade-up" data-aos-delay="500">View All Layouts</a>
+            </div>   
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+<style>
+    #RPsbsr-1445 iframe {
+
+    }
+</style>
+<section id="RPsbsr-1445">
+    <div class="cs-container">
+
+<div class="iframe">
+        <iframe src="https://my.matterport.com/show/?m=BneQ5psw3Qr&section=media" width="100%" height="400px" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+    </div>
+
+        <div class="cs-content">
+            <span class="cs-topper">Virtual Tour</span>
+            <h2 class="cs-title">2 Bedroom / 2 Bathroom</h2>
+             
+            <div class="btn-group">
+                 <a href="/layouts" class="cs-button-solid" data-aos="fade-up" data-aos-delay="500">View All Layouts</a>
+            </div>   
+        </div>
+    </div>
+</section>
+                                
+
+
+
+
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

@@ -1,0 +1,141 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-1456 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-1456 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbs-1456 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbs-1456 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-1456 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-1456 .cs-logo-group {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  #sbs-1456 .cs-logo-image {
+    width: 40%;
+    max-width: 12.5rem;
+    height: auto;
+    display: block;
+  }
+  #sbs-1456 .cs-logo-image:nth-of-type(2) {
+    /* max-width: 6.25rem; */
+  }
+  #sbs-1456 .cs-image-group {
+    /* scaling the font size with the view width, removed at desktop */
+    font-size: min(2.23vw, .83em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 40.625em;
+    height: 45.5625em;
+    position: relative;
+  }
+  #sbs-1456 .cs-picture {
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #sbs-1456 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #sbs-1456 .cs-picture1 {
+    width: 32.625em;
+    height: 45.5625em;
+    left: 0;
+    top: 0;
+  }
+  #sbs-1456 .cs-picture2 {
+    width: 23.625em;
+    height: 28.75em;
+    right: 0;
+    bottom: 6.25em;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-1456 .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3.25rem;
+  }
+  #sbs-1456 .cs-content {
+    width: 40%;
+    padding: 3rem 0;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    align-self: center;
+  }
+  #sbs-1456 .cs-image-group {
+    font-size: 1rem;
+    width: 50vw;
+    max-width: 40.625rem;
+    height: auto;
+    /* 580px - 729px */
+    min-height: clamp(36.25rem, 50vw, 45.5625rem);
+    flex: none;
+    display: flex;
+  }
+  #sbs-1456 .cs-picture1 {
+    width: 83%;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  #sbs-1456 .cs-picture2 {
+    width: 60%;
+    height: 57%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-1456 .cs-title,
+  body.dark-mode #sbs-1456 .cs-text,
+  body.dark-mode #sbs-1456 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-1456 .cs-title:before,
+  body.dark-mode #sbs-1456 .cs-text:before,
+  body.dark-mode #sbs-1456 .cs-li:before {
+    background-color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-1456 .cs-background:before {
+    background-color: var(--dark);
+  }
+}

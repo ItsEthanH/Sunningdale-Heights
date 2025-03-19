@@ -1,0 +1,158 @@
+#cs-form-1150 {
+    z-index: 999999;
+    position: fixed;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -60%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c394b;
+    height: 90vh;
+    max-width: 34.375rem;
+    width: 80vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 2rem);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    gap: 0.75rem;
+}
+
+#cs-form-1150 #close-form {
+    z-index: 9999999;
+    position: absolute;
+    top: clamp(1.5rem, 5.18vw, 3rem);
+    right: clamp(1rem, 4vw, 2rem);
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--bodyTextColorWhite);
+    cursor: pointer;
+}
+
+#cs-form-1150 .cs-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: var(--headerColor);
+    gap: 0.25rem;
+}
+
+#cs-form-1150 .cs-input {
+    border: none;
+    background-color: #f7f7f7;
+    height: 3.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: var(--headerColor);
+}
+
+#cs-form-1150 .cs-input::placeholder {
+    opacity: 0.6;
+    color: #7d799c;
+}
+
+#cs-form-1150 .cs-textarea {
+    margin-bottom: 0.75rem;
+    min-height: 7.5rem;
+    padding-top: 1.5rem;
+    font-family: inherit;
+}
+
+#cs-form-1150 .cs-submit {
+    border: none;
+    margin: 1.25rem auto;
+    max-width: 17.6875rem;
+    width: 100%;
+}
+
+#cs-form-1150 .cs-submit:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 64rem) {
+    #cs-form-1150 .cs-form {
+        max-width: 36.125rem;
+        width: 46%;
+    }
+
+    #cs-form-1150 .cs-submit {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 0rem) {
+    #cs-form-1150 .cs-title,
+    #cs-form-1150 .cs-text,
+    #cs-form-1150 .cs-header,
+    #cs-form-1150 .cs-link,
+    #cs-form-1150 .cs-label,
+    #cs-form-1150 .cs-contact-text {
+        color: var(--bodyTextColorWhite);
+    }
+
+    #cs-form-1150 .cs-contact-text,
+    #cs-form-1150 .cs-link {
+        opacity: 0.8;
+    }
+
+    #cs-form-1150 .cs-topper {
+        color: var(--secondary);
+    }
+
+    #cs-form-1150 .cs-icon-wrapper {
+        border-color: #fff;
+    }
+
+    #cs-form-1150 .cs-icon {
+        filter: grayscale(1) brightness(1000%);
+    }
+
+    #cs-form-1150 .cs-form {
+        background-color: var(--medium);
+    }
+
+    #cs-form-1150 .cs-input {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+
+    #cs-form-1150 .cs-input::placeholder {
+        opacity: 0.8;
+        color: #fff;
+    }
+
+    #cs-form-1150 .cs-graphic {
+        opacity: 0.4;
+    }
+}
+
+body.form-active::before {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out; 
+}
+
+body.form-active #cs-form-1150 {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+}

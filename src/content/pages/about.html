@@ -1,0 +1,80 @@
+---
+title: 'About'
+description: 'About'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ '/assets/css/about.css' | url }}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">About Us</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+        <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+        <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1456">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="{{ '/assets/images/5-twobed.jpg' | url }}">
+                <source media="(min-width: 601px)" srcset="{{ '/assets/images/5-twobed.jpg' | url }}">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/5-twobed.jpg' | url }}" alt="turbine" width="500" height="729" aria-hidden="true">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="{{ '/assets/images/11-onebed.jpg' | url }}">
+                <source media="(min-width: 601px)" srcset="{{ '/assets/images/11-onebed.jpg' | url }}">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/11-onebed.jpg' | url }}" alt="windmill" width="378" height="460" aria-hidden="true">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Our Properties</span>
+            <h2 class="cs-title">Sunningdale Heights Luxury Living</h2>
+            <p class="cs-text">
+                Come home to Sunningdale Heights - where modern living meets the heart of London, Ontario. Our meticulously designed homes offer an unmatched combination of comfort and convenience within a vibrant community. Discover a lifestyle redefined at Sunningdale Heights. Situated in the heart of London, Ontario, our property embodies contemporary luxury and thoughtful design.
+            </p>
+            <p class="cs-text">
+                Our homes feature spacious living areas, top-of-the-line finishes, and an attention to detail that sets a new standard for living. Sunningdale Heights is more than just a development; it's a statement of sophistication. 
+            </p>
+            <p class="cs-text">
+                Indulge in an unparalleled living experience - register today for a glimpse of what awaits you.
+            </p>
+            <h3 class="cs-h3">Development and Construction By:</h3>
+            <div class="cs-logo-group">
+                <img class="cs-logo-image" style="" src="{{ '/assets/images/aura.png' | url }}" alt="aura logo"  height="100" decoding="async">
+                <img class="cs-logo-image" src="{{ '/assets/images/MarshallZehr-Logo-Horizontal (1).png' | url }}" alt="aura logo"  height="100" decoding="async">
+            </div>
+            <div class="btn-group">
+                <button class="cs-button-solid form-button" data-aos="fade-up" data-aos-delay="500">Register Now</button>
+                <a  href="tel:365-675-1968" class="cs-button-solid mobile" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+                <a  href="mailto:rentals@sunningdaleheights.com" class="cs-button-solid desktop" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+            </div>
+                </div>
+    </div>
+</section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

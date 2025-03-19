@@ -1,0 +1,690 @@
+---
+title: 'Sunningdale Heights'
+description: 'New development in London, Ontario'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ '/assets/css/local.css' | url }}" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<style>
+    .cs-button-solid.desktop {
+        display: inline-block;
+    }
+    .cs-button-solid.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cs-button-solid.desktop {
+        display: none;
+    }
+    .cs-button-solid.mobile {
+    display: inline-block;
+}
+
+}
+</style>
+
+</section>
+<section id="hero-1617">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper" data-aos="fade-up">
+                Experience Londons best, right at home
+            </span>
+            <h1 class="cs-title" data-aos="fade-up" data-aos-delay="100">Welcome to<br>Sunningdale Heights</h1>
+            <p class="cs-text"  data-aos="fade-up" data-aos-delay="200">
+                Register now to receive exclusive updates on rental unit availability and pricing. Be among the first to secure your rental and experience the exceptional lifestyle at Sunningdale Heights.
+            </p>
+            <a href="#sbs-1456" class="cs-button-solid"  data-aos="fade-up" data-aos-delay="300">Learn More</a>
+            <!--Bottom Corners-->
+            <div class="cs-corners" aria-hidden="true"></div>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="{{ '/assets/images/hero.jpg' | url }}">
+        <source media="(min-width: 601px)" srcset="{{ '/assets/images/hero.jpg' | url }}">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/hero.jpg' | url }}" alt="meeting" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>
+          
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+<style>
+    #sbs-1456 .cs-logo-group {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+    #sbs-1456 .cs-logo-image {width: 40%;max-width: 12.5rem;height: auto;display: block;}#sbs-1456 .cs-logo-image:nth-of-type(2) {/*max-width: 6.25rem;*/}
+</style>
+<section id="sbs-1456">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1 aos-init" data-aos="fade-right">
+                <source media="(max-width: 600px)" srcset="/assets/images/19-twobed.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/19-twobed.jpg">
+                <img alt="turbine" decoding="async" height="729" src="/assets/images/19-twobed.jpg" width="500" aria-hidden="true" loading="lazy">
+            </picture>
+            <picture class="cs-picture cs-picture2 aos-init" data-aos="fade-left">
+                <source media="(max-width: 600px)" srcset="/assets/images/5-onebed.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/5-onebed.jpg">
+                <img alt="windmill" decoding="async" height="460" src="/assets/images/5-onebed.jpg" width="378" aria-hidden="true" loading="lazy">
+            </picture>
+            <picture class="cs-picture cs-picture3 aos-init" data-aos="fade-right">
+                <source media="(max-width: 600px)" srcset="/assets/images/7-twobed.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/7-twobed.jpg" width="378" aria-hidden="true" loading="lazy">
+                <img alt="windmill" decoding="async" height="460" src="/assets/images/7-twobed.jpg" width="378" aria-hidden="true" loading="lazy">
+            </picture>
+
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper aos-init" data-aos="fade-up" data-aos-delay="100">Our Properties</span>
+            <h2 class="cs-title aos-init" data-aos="fade-up" data-aos-delay="200">Sunningdale Heights - Phase I</h2>
+            <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="300">Discover a lifestyle redefined at Sunningdale Heights. Sunningdale Heights is meticulously designed to offer an unmatched combination of comfort and convenience within a vibrant community. Discover a lifestyle redefined at Sunningdale Heights. Situated in the heart of London, Ontario, our property embodies contemporary and thoughtful&nbsp;design.</p>
+            <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="400">Sunningdale Heights feature spacious living areas and an attention to detail that sets a new standard for living. Sunningdale Heights is more than just a development; it's a statement of sophistication.</p>
+            <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="500">Indulge in an unparalleled living experience - register today for a glimpse of what awaits you.</p>
+            <div class="cs-logo-group"><br>
+                <h3 class="cs-h3">Development and Construction By:</h3><img alt="aura logo" decoding="async" height="100" src="/assets/images/aura.png" class="cs-logo-image">
+                <img alt="aura logo" decoding="async" height="100" src="/assets/images/MarshallZehr-Logo-Horizontal (1).png" class="cs-logo-image"></div>
+                <div class="btn-group">
+                <button class="cs-button-solid form-button" data-aos="fade-up" data-aos-delay="500">Register Now</button>
+                <a  href="tel:365-675-1968" class="cs-button-solid mobile" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+                <a  href="mailto:rentals@sunningdaleheights.com" class="cs-button-solid desktop" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--              Side By Side Reverse            -->
+<!-- ============================================ -->
+
+<section id="amenities">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1 aos-init" data-aos="fade-left"><source media="(max-width: 600px)" srcset="/assets/images/bed1.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bed1.jpg"><img alt="turbine" decoding="async" height="729" src="/assets/images/bed1.jpg" width="500" aria-hidden="true" loading="lazy"></picture>
+            <picture class="cs-picture cs-picture2 aos-init" data-aos="fade-right"><source media="(max-width: 600px)" srcset="/assets/images/bed2.jpg"><source media="(min-width: 601px)" srcset="/assets/images/bed2.jpg"><img alt="windmill" decoding="async" height="460" src="/assets/images/bed2.jpg" width="378" aria-hidden="true" loading="lazy"></picture>
+            <picture class="cs-picture cs-picture3 aos-init" data-aos="fade-right"><source media="(max-width: 600px)" srcset="/assets/images/kitchen.jpg"><source media="(min-width: 601px)" srcset="/assets/images/kitchen.jpg"><img alt="windmill" decoding="async" height="460" src="/assets/images/kitchen.jpg" width="378" aria-hidden="true" loading="lazy"></picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper" data-aos="fade-up" data-aos-delay="100">Why Sunningdale</span>
+            <h2 class="cs-title" data-aos="fade-up" data-aos-delay="200">Enjoy Added Benefits In Sunningdale</h2>
+            <p class="cs-text" data-aos="fade-up" data-aos-delay="300">
+                At Sunningdale Heights, we offer residents an array of building amenities, including:
+            </p>
+            <ul class="cs-bullet-list" data-aos="fade-up" data-aos-delay="400">
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Party Room:
+                    </h3>
+                    <p class="cs-item-text">
+                        Celebrate life's special moments with friends and family in our well-appointed party room, perfect for gatherings and events.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Two Rooftop Terraces:
+                    </h3>
+                    <p class="cs-item-text">
+                        Take in breathtaking views of London, Ontario from our two rooftop terraces. Whether you're seeking relaxation or a place to entertain, these spaces are designed for your enjoyment.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Spacious Bedrooms:
+                    </h3>
+                    <p class="cs-item-text">
+                        Rest easy in generously sized bedrooms designed for maximum comfort.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Modern Kitchens:
+                    </h3>
+                    <p class="cs-item-text">
+                        Prepare gourmet meals in our modern kitchens equipped with high-end appliances and ample counter space.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Luxurious Bathrooms:
+                    </h3>
+                    <p class="cs-item-text">
+                        Pamper yourself in elegant bathrooms with spa-like features and finishes.
+                    </p>
+                </li>
+            </ul>      
+            <div class="btn-group">
+                <button class="cs-button-solid form-button" data-aos="fade-up" data-aos-delay="500">Register Now</button>
+                <a href="tel:365-675-1968" class="cs-button-solid mobile" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+                <a href="mailto:rentals@sunningdaleheights.com" class="cs-button-solid desktop" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+
+            </div>        </div>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{{ '/assets/images/why-bg.jpg' | url }}">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="{{ '/assets/images/why-bg.jpg' | url }}">
+        <img loading="lazy" decoding="async" src="{{ '/assets/images/why-bg.jpg' | url }}" alt="turbine" width="1280" height="568">
+    </picture>
+</section>
+                   
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa-wtvfCQDK7f_3Y0rOEaD7itnh7MFy8Y&callback=initMap" async defer></script>
+<script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 43.0068428, lng: -81.2774517},
+        zoom: 12
+      });
+  
+      var locations = [
+        {lat: 43.0068428, lng: -81.2774517, title: 'Western University'},
+        {lat: 42.9838142, lng: -81.2512969, title: 'Fanshawe College'},
+        {lat: 43.0205035, lng: -81.2792328, title: 'Masonville Place'},
+        {lat: 42.9828131, lng: -81.2503452, title: 'Garden Market'},
+        {lat: 42.9892363, lng: -81.2484415, title: 'Victoria Park'},
+        {lat: 42.9985512, lng: -81.2638298, title: 'Gibbons Park'},
+        {lat: 42.9843909, lng: -81.2491626, title: 'London Music Hall'},
+        {lat: 42.9825817, lng: -81.2550668, title: 'Museum London'},
+        {lat: 43.0124531, lng: -81.2745418, title: 'London Health Sciences'},
+        {lat: 43.0009578, lng: -81.254751, title: 'St. Joseph\'s Health Care London'},
+        // Add the new location with a placeholder for the custom icon
+        {lat: 43.0467168, lng: -81.2641769, title: 'Sunningdale Heights', icon: 'https://sunningdaleheights.com/assets/images/icon.png'}
+      ];
+  
+      locations.forEach(function(location) {
+  var markerOptions = {
+    position: {lat: location.lat, lng: location.lng},
+    map: map,
+    title: location.title
+  };
+
+  // Check if the location has a custom icon
+  if (location.icon) {
+    markerOptions.icon = {
+      url: location.icon,
+      // Set the size of the icon
+      scaledSize: new google.maps.Size(32, 32) // Adjust these values as needed
+    };
+  }
+
+  var marker = new google.maps.Marker(markerOptions);
+      // Create an info window
+      var infoWindow = new google.maps.InfoWindow({
+      content: location.title
+    });
+
+    // Add a click listener to the marker
+    marker.addListener('click', function() {
+      infoWindow.open(map, marker);
+    });
+});
+
+
+    }
+  </script>
+
+<section id="sbs-1640">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper" data-aos="fade-up" data-aos-delay="100">Experience the Best of London</span>
+            <h2 class="cs-title" data-aos="fade-up" data-aos-delay="200">Sunningdale Amenities in London, Ontario</h2>
+            <div class="cs-picture" data-aos="fade-up" data-aos-delay="300">
+                <!--Replace with google maps embed of the neighborhood-->
+ 
+                <div id="map" style="height:600px; width: 450px;"></div>
+            </div>
+        </div>
+        <div class="cs-stats-group" data-aos="fade-up" data-aos-delay="400">
+            <p class="cs-text">
+                Beyond our building amenities, you'll also have access to the following local amenities:
+            </p>
+            <ul class="cs-bullet-list">
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Culinary Delights:
+                    </h3>
+                    <p class="cs-item-text">
+                        Satisfy your palate with a diverse culinary scene featuring restaurants that offer a world of flavours right in your neighbourhood.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Top Schools:
+                    </h3>
+                    <p class="cs-item-text">
+                        Provide your family with quality education by enrolling in nearby renowned schools and educational institutions, such as Western University and Fanshawe College.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Shopping Paradise:
+                    </h3>
+                    <p class="cs-item-text">
+                        Fulfill your shopping desires at the city's finest retail destinations, including the bustling Masonville Place and the eclectic Covent Garden Market.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Recreation:
+                    </h3>
+                    <p class="cs-item-text">
+                        Enjoy outdoor activities at nearby parks like Victoria Park and Gibbons Park, or explore cultural events at the London Music Hall and Museum London.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Healthcare:
+                    </h3>
+                    <p class="cs-item-text">
+                        Access top-notch healthcare facilities, such as London Health Sciences and St. Joseph's Health Care London, for your peace of mind.
+                    </p>
+                </li>
+            </ul>      
+            <p class="cs-text">
+                When you choose Sunningdale Heights, you're not just choosing a place to live; you're choosing a lifestyle enriched by the best London, Ontario has to offer. Explore all these incredible amenities when you register for updates.
+            </p>
+            <!--Stats if you want to add some-->
+            <!-- <ul class="cs-stats">
+                <li class="cs-stat">
+                    <span class="cs-number">475</span>
+                    <span class="cs-desc">Repeat Customers</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">2K</span>
+                    <span class="cs-desc">Satisfied Customers</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-number">37</span>
+                    <span class="cs-desc">Professional Team</span>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1162">
+    <div class="cs-container">
+        <div class="cs-image-group">
+
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1" data-aos="fade-right">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{{ '/assets/images/hero.jpg' | url }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{{ '/assets/images/hero.jpg' | url }}">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/hero.jpg' | url }}" alt="appliance" width="630" height="390">
+            </picture>
+
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2" data-aos="fade-left" data-aos-delay="400">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{{ '/assets/images/london.jpg' | url }}">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="{{ '/assets/images/london.jpg' | url }}">
+                <img loading="lazy" decoding="async" src="{{ '/assets/images/london.jpg' | url }}" alt="appliance" width="461" height="300">
+            </picture>
+
+
+            <div class="cs-box" data-aos="fade-up" data-aos-delay="100">
+                <span class="cs-number">Renting Now</span>
+                <span class="cs-desc">Units Available!</span>
+            </div>
+
+
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper" data-aos="fade-up">Life in London, Ontario</span>
+            <h2 class="cs-title" data-aos="fade-up" data-aos-delay="100">Neighbourhood Information:</h2>
+            <p class="cs-text" data-aos="fade-up" data-aos-delay="200">
+                London, Ontario, seamlessly combines urban living with natural beauty. From lush parks to an array of cultural events, this city has something to offer everyone.
+            </p>
+            <p class="cs-text" data-aos="fade-up" data-aos-delay="300">
+                Our neighbourhood guide will introduce you to:
+            </p>
+            <ul class="cs-bullet-list" data-aos="fade-up" data-aos-delay="400">
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Recreation:
+                    </h3>
+                    <p class="cs-item-text">
+                        Discover parks, trails, and recreational activities that allow you to embrace outdoors right at your doorstep.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Cultural Riches:
+                    </h3>
+                    <p class="cs-item-text">
+                        Immerse yourself in the city's rich history and cultural scene, with museums, galleries, and events that inspire and entertain.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" aria-hidden="true" src="{{ '/assets/images/bullet.svg' | url }}" loading="lazy" decoding="async" alt="squares" width="17" height="18">
+                        Economic Hub:
+                    </h3>
+                    <p class="cs-item-text">
+                        Benefit from a thriving business environment with career opportunities in various sectors.
+                    </p>
+                </li>
+            </ul>    
+            <div class="btn-group">
+                <button class="cs-button-solid form-button" data-aos="fade-up" data-aos-delay="500">Register Now</button>
+                <a href="tel:365-675-1968" class="cs-button-solid mobile" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+                <a href="mailto:rentals@sunningdaleheights.com" class="cs-button-solid desktop" data-aos="fade-up" data-aos-delay="500">Book a Tour</a>
+            </div>        </div>
+    </div>
+</section>
+         
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<!-- <section id="contact-1150">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Inquire</span>
+            <h2 class="cs-title">Contact Us For More Details</h2>
+        </div>
+        <div class="cs-contact-group">
+            <picture class="cs-picture">
+                 
+                <source media="(max-width: 600px)" srcset="{{'/assets/images/Market place Option 1 brick at grade (2).jpg '| url }}">
+                 <source media="(min-width: 601px)" srcset="{{'/assets/images/Market place Option 1 brick at grade (2).jpg' | url }}">
+                <img loading="lazy" decoding="async" src="{{'/assets/images/Market place Option 1 brick at grade (2).jpg ' | url }}" alt="people" width="630" height="300">
+            </picture>
+            <p class="cs-text">
+                Don't miss the chance to become part of the Sunningdale Heights community. Register now for exclusive updates and pricing information. It's time to come home to a new era of living in London, Ontario, where every amenity, including our building amenities, is within your reach.
+            </p>
+            <p class="cs-contact-text">
+                Have questions or need more information? Our dedicated team is here to assist you:
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="{{'/assets/images/mech-phone.svg' | url }}" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:905-761-0077" class="cs-link">(905) 761-0077
+                        </a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="{{'/assets/images/mail.svg' | url }}" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="mailto:info@auragoc.com" class="cs-link">info@auragoc.com</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      
+        <style>
+            form .cs-content {
+                text-align: left!important;
+            }
+            form h2.cs-title {
+                font-size:16px;
+              
+            }
+
+            #contact-1150 .cs-label {
+                padding-top:10px;
+            }
+
+            .radio-buttons label {
+                display:flex;
+                margin-right: 20px;
+                align-items: center;
+            }
+
+            .radio-buttons label input {
+                height: 2rem;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+            }
+   
+        </style>
+        <form class="cs-form" id="cs-form-1150" name="Contact Form" method="post">
+            <div class="cs-content">
+                <h2 class="cs-title">Personal Information</h2>
+
+            </div>
+            <label class="cs-label">
+                Full Name
+                <input class="cs-input" required type="text" id="name-1150" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label cs-email">
+                Email Address
+                <input class="cs-input" required type="email" id="email-1150" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-phone">
+                Phone Number
+                <input class="cs-input" required type="number" id="phone-1150" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Preferred Contact Method
+        
+                <div class="radio-buttons" style="display:flex;">
+        
+                
+                <label for="phoneYes-1150" style="margin-right:20px">Phone
+                <input type="radio" class="cs-input" id="phoneYes-1150" name="contact-method" value="Phone"></label>
+                
+                <label for="emailYes-1150">Email
+                <input type="radio" class="cs-input" id="emailYes-1150" name="contact-method" value="Email"></label>
+            </div>
+        
+            </label>
+        
+            <div class="cs-content">
+                <h2 class="cs-title" style="margin-top:20px;">Rental Preferences</h2>
+
+            </div>
+
+            <label class="cs-label">
+                Desired Move-in Date
+                <input type="date" required id="date-1150" name="date" class="cs-input">
+            </label> -->
+           <!-- <label class="cs-label">
+        Rental Duration
+        <select class="cs-input" id="duration-1150" name="duration">
+            <option value="less-6">Less than 6 months</option>
+            <option value="6-12">6-12 months</option>
+            <option value="more-12">More than 12 months</option>
+        </select>
+    </label> 
+
+     <label class="cs-label">
+        Suite Size Preference
+        <div class="cs-input-group">
+            <input type="checkbox" id="studio-1150" name="unitSize[]" value="Studio">
+            <label for="studio-1150">Studio</label>
+            <input type="checkbox" id="1bed-1150" name="unitSize[]" value="1 Bedroom">
+            <label for="1bed-1150">1 Bedroom</label>
+            <input type="checkbox" id="2beds-1150" name="unitSize[]" value="2 Bedrooms">
+            <label for="2beds-1150">2 Bedrooms</label>
+            <input type="checkbox" id="3beds-1150" name="unitSize[]" value="3 Bedrooms">
+            <label for="3beds-1150">3 Bedrooms</label>
+            <input type="checkbox" id="other-1150" name="unitSize[]" value="Other">
+            <label for="other-1150">Other</label>
+        </div>
+    </label>
+
+   
+    <label class="cs-label">
+        Budget
+        <input type="number" class="cs-input" required id="budget-1150" name="budget">
+        <select class="cs-input" id="budget-1150" name="budget">
+            <option value="500-1000">$500-$1000</option>
+            <option value="1000-1500">$1000-$1500</option>
+            <option value="1500-2000">$1500-$2000</option>
+        </select> 
+    </label>
+    <div class="cs-content">
+        <h2 class="cs-title" style="margin-top:20px;">Lifestyle and Needs</h2>
+
+    </div>
+     <label class="cs-label">
+        Number of Occupants
+        <input type="number" class="cs-input" id="occupants-1150" name="occupants" required min="1">
+    </label>
+
+    <label class="cs-label">
+        Number of Children
+        <input type="number" class="cs-input" id="children-1150" name="children" required min="0">
+    </label>
+
+     <label class="cs-label">
+        Are you bringing any pets?
+
+        <div class="radio-buttons" style="display:flex;">
+
+        
+        <label for="petsYes-1150" style="margin-right:20px">Yes
+        <input type="radio" class="cs-input" id="petsYes-1150" name="pets" value="Yes"></label>
+        
+        <label for="petsNo-1150">No
+        <input type="radio" class="cs-input" id="petsNo-1150" name="pets" value="No"></label>
+    </div>
+
+    </label>
+
+    <label class="cs-label">
+       Where do you currently live?
+        <select class="cs-input" id="current-1150" name="current">
+            <option value="" disabled selected>Select an option</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="first-time-renter">First Time Renter</option>
+        </select>
+    </label>
+
+    <label class="cs-label">
+        What city do you currently live in?
+        <input type="text" class="cs-input" required id="city-1150" name="city">
+     </label>
+ 
+
+     <label class="cs-label">
+        Special Requirements or Preferences
+        <textarea class="cs-input" id="special-1150" name="special"></textarea>
+    </label>
+    
+    <div class="cs-content">
+        <h2 class="cs-title" style="margin-top:20px;">Additional Information</h2>
+
+    </div>
+     <label class="cs-label">
+        How did you hear about us?
+        <select class="cs-input" id="referral-1150" name="referral">
+            <option value="" disabled selected>Select an option</option>
+
+            <option value="search-engine">Search Engine</option>
+            <option value="social-media">Social Media</option>
+            <option value="referral">Referral</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+    </label>
+
+     <label class="cs-label">
+        Any Questions or Comments?
+        <textarea class="cs-input" id="comments-1150" name="comments"></textarea>
+    </label>
+
+
+
+            <style>
+                #contact-1150 .cs-form {
+                    flex-direction: column;
+                }
+                .form-errors {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.form-errors ul {
+    list-style: none;
+    padding: 0;
+    color:red;
+    text-align: center;
+}
+
+.form-errors li {
+    margin-bottom: 5px;
+    color:red;
+}
+.form-success {
+    color: green;
+    margin-bottom: 15px;
+}
+            </style>
+            <div id="formErrors" class="form-errors"></div>
+            <div id="formSuccess" class="form-success" style="display: none;"></div>
+
+            <button class="cs-button-solid cs-submit" type="submit">Register Now</button>
+        </form>
+    </div>
+</section> -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 50, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        mirror: false, // whether elements should animate out while scrolling past them
+    });
+</script>
+                                
+{% include 'components/cta.html' %}
+{% endblock %}

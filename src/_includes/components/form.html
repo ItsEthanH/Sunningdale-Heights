@@ -1,0 +1,116 @@
+<form class="cs-form" id="cs-form-1150" method="post" name="Contact Form">
+    <style>
+                        form .cs-content {
+                    text-align: left!important;
+                }
+                form h2.cs-title {
+                    font-size: 16px;
+                }
+                #contact-1150 .cs-label {
+                    padding-top: 10px;
+                }
+                .radio-buttons label {
+                    display: flex;
+                    margin-right: 20px;
+                    align-items: center;
+                }
+                .radio-buttons label input {
+                    height: 2rem;
+                    margin-left: 20px;
+                    align-items: center;
+                    display: flex;
+                }
+    </style>
+    <button id="close-form" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path style="stroke:none;fill-rule:nonzero;fill:#fafbfc;fill-opacity:1" d="m10.648 7.953 4.7-4.703a1.896 1.896 0 0 0 .511-1.848A1.897 1.897 0 0 0 14.504.047a1.896 1.896 0 0 0-1.848.512L7.953 5.262 3.25.559A1.904 1.904 0 0 0 .559 3.25l4.703 4.703-4.703 4.703a1.896 1.896 0 0 0-.512 1.848 1.89 1.89 0 0 0 1.355 1.355 1.896 1.896 0 0 0 1.848-.511l4.703-4.7 4.703 4.7c.371.375.86.558 1.348.558.484 0 .973-.183 1.344-.558a1.898 1.898 0 0 0 0-2.692Zm0 0"/></svg>
+    </button>
+    <div class="cs-content">
+        <h2 class="cs-title">Personal Information</h2>
+        <p class="cs-text">Please fill out this form in full to get started.</p>
+    </div>
+    <label class="cs-label">Full Name <input id="name-1150" name="name" type="text" class="cs-input" required="" placeholder="Name"></label>
+    <label class="cs-label cs-email">Email Address <input id="email-1150" name="email" type="email" class="cs-input" required="" placeholder="Email"></label>
+    <label class="cs-label cs-phone">Phone Number <input id="phone-1150" name="phone" type="number" class="cs-input" required="" placeholder="Phone"></label>
+    <label class="cs-label">Preferred Contact Method<div class="radio-buttons" style="display:flex">
+            <label for="phoneYes-1150" style="margin-right:20px">Phone <input id="phoneYes-1150" name="contact-method" type="radio" class="cs-input" value="Phone"></label>
+            <label for="emailYes-1150">Email <input id="emailYes-1150" name="contact-method" type="radio" class="cs-input" value="Email"></label>
+        </div>
+    </label>
+    <div class="cs-content">
+        <h2 class="cs-title" style="margin-top:20px">Rental Preferences</h2>
+    </div>
+    <label class="cs-label">Desired Move-in Date <input id="date-1150" name="date" type="date" class="cs-input" required=""></label>
+    <label class="cs-label">Suite Size Preference<div class="cs-input-group"><input id="studio-1150" name="unitSize[]" type="checkbox" value="Studio">
+            <label for="studio-1150">Studio</label>
+            <input id="1bed-1150" name="unitSize[]" type="checkbox" value="1 Bedroom">
+            <label for="1bed-1150">1 Bedroom</label>
+            <input id="2beds-1150" name="unitSize[]" type="checkbox" value="2 Bedrooms">
+            <label for="2beds-1150">2 Bedrooms</label>
+            <input id="3beds-1150" name="unitSize[]" type="checkbox" value="3 Bedrooms">
+            <label for="3beds-1150">3 Bedrooms</label>
+            <input id="other-1150" name="unitSize[]" type="checkbox" value="Other">
+            <label for="other-1150">Other</label>
+        </div>
+    </label>
+    <label class="cs-label">Budget <input id="budget-1150" name="budget" type="number" class="cs-input" required=""></label>
+    <div class="cs-content">
+        <h2 class="cs-title" style="margin-top:20px">Lifestyle and Needs</h2>
+    </div>
+    <label class="cs-label">Number of Occupants <input id="occupants-1150" name="occupants" type="number" class="cs-input" required="" min="1"></label>
+    <label class="cs-label">Number of Children <input id="children-1150" name="children" type="number" class="cs-input" required="" min="0"></label>
+    <label class="cs-label">Are you bringing any pets?<div class="radio-buttons" style="display:flex">
+            <label for="petsYes-1150" style="margin-right:20px">Yes <input id="petsYes-1150" name="pets" type="radio" class="cs-input" value="Yes"></label>
+            <label for="petsNo-1150">No <input id="petsNo-1150" name="pets" type="radio" class="cs-input" value="No"></label>
+        </div>
+    </label>
+    <label class="cs-label">Where do you currently live? <select class="cs-input" id="current-1150" name="current">
+            <option value="" disabled="" selected="">Select an option</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="first-time-renter">First Time Renter</option>
+        </select>
+    </label>
+    <label class="cs-label">What city do you currently live in? <input id="city-1150" name="city" type="text" class="cs-input" required=""></label>
+    <label class="cs-label">Special Requirements or Preferences <textarea class="cs-input" id="special-1150" name="special"></textarea>
+    </label>
+    <div class="cs-content">
+        <h2 class="cs-title" style="margin-top:20px">Additional Information</h2>
+    </div>
+    <label class="cs-label">How did you hear about us? <select class="cs-input" id="referral-1150" name="referral">
+            <option value="" disabled="" selected="">Select an option</option>
+            <option value="search-engine">Search Engine</option>
+            <option value="social-media">Social Media</option>
+            <option value="referral">Referral</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+    </label>
+    <label class="cs-label">Any Questions or Comments? <textarea class="cs-input" id="comments-1150" name="comments"></textarea>
+    </label>
+    <style>
+        #contact-1150 .cs-form {
+            flex-direction: column;
+        }
+        .form-errors {
+            color: red;
+            margin-bottom: 15px;
+        }
+        .form-errors ul {
+            list-style: none;
+            padding: 0;
+            color: red;
+            text-align: center;
+        }
+        .form-errors li {
+            margin-bottom: 5px;
+            color: red;
+        }
+        .form-success {
+            color: green;
+            margin-bottom: 15px;
+        }
+    </style>
+    <div class="form-errors" id="formErrors"></div>
+    <div class="form-success" style="display:none" id="formSuccess"></div>
+    <button class="cs-button-solid cs-submit" type="submit">Register Now</button>
+</form>

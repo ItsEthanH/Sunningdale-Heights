@@ -1,0 +1,167 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-1456 {
+        padding: var(--sectionPadding);
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (522/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-logo-group {
+            margin: (32/16rem) 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: (16/16rem);
+        }
+
+        .cs-logo-image {
+            width: 40%;
+            max-width: (200/16rem);
+            height: auto;
+            display: block;
+
+            &:nth-of-type(2) {
+                max-width: (100/16rem);
+            }
+        }
+
+        .cs-image-group {
+            /* scaling the font size with the view width, removed at desktop */
+            font-size: ~"min(2.23vw, .83em)";
+            /* using ems so we can use font size to scale the whole section */
+            width: (650/16em);
+            height: (729/16em);
+            position: relative;
+        }
+
+        .cs-picture {
+            /* clips img tag corners */
+            overflow: hidden;
+            position: absolute;
+            display: block;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* makes image act like a background image */
+                object-fit: cover;
+            }
+        }
+
+        .cs-picture1 {
+            width: (522/16em);
+            height: (729/16em);
+            left: 0;
+            top: 0;
+        }
+
+        .cs-picture2 {
+            width: (378/16em);
+            height: (460/16em);
+            right: 0;
+            bottom: (100/16em);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-1456 {
+        .cs-container {
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: (52/16rem);
+        }
+
+        .cs-content {
+            width: 40%;
+            padding: (48/16rem) 0;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            align-self: center;
+        }
+
+        .cs-image-group {
+            font-size: 1rem;
+            width: 50vw;
+            max-width: (650/16rem);
+            height: auto;
+            /* 580px - 729px */
+            min-height: clamp(36.25rem, 50vw, 45.5625rem);
+            flex: none;
+            display: flex;
+
+        }
+
+        .cs-picture1 {
+            width: 83%;
+            height: auto;
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+
+        .cs-picture2 {
+            width: 60%;
+            height: 57%;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-1456 {
+            .cs-title,
+            .cs-text,
+            .cs-li {
+                color: var(--bodyTextColorWhite);
+                &:before {
+                    background-color: var(--bodyTextColorWhite);
+                }
+            }
+
+            .cs-background {
+                &:before {
+                    background-color: var(--dark);
+                }
+            }
+        }
+    }
+}

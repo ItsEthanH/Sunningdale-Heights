@@ -1,0 +1,15 @@
+{
+    "name": "Sunningdale Heights",
+    "email": "info@auragoc.com",
+    "phoneForTel": "905-761-0077",
+    "phoneFormatted": "(905) 761-0077",
+    "address": {
+        "lineOne": "First Address Line",
+        "lineTwo": "Second Address Line",
+        "city": "London",
+        "state": "ON",
+        "zip": "",
+        "mapLink": ""
+    },
+    "domain": "https://sunningdaleheights.ca"
+}

@@ -1,0 +1,921 @@
+@media only screen and (min-width: 0rem) {
+    #hero-1617 {
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    }
+    #hero-1617 .cs-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        max-width: 80rem;
+        width: 100%;
+        gap: 3rem;
+    }
+    #hero-1617 .cs-content {
+        --cornerWidth: 8.75rem;
+        --cornerHeight: 8.75rem;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 53.125rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 5vw, 3rem);
+    }
+    #hero-1617 .cs-content:before {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        opacity: 1;
+        display: block;
+        border: 2px solid #fff;
+        border-right: none;
+        border-bottom: none;
+        max-height: var(--cornerWidth);
+        height: 35%;
+        max-width: var(--cornerWidth);
+        width: 35%;
+    }
+    #hero-1617 .cs-content:after {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        opacity: 1;
+        display: block;
+        border: 2px solid #fff;
+        border-bottom: none;
+        border-left: none;
+        max-height: var(--cornerHeight);
+        height: 35%;
+        max-width: var(--cornerWidth);
+        width: 35%;
+    }
+    #hero-1617 .cs-corners {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    #hero-1617 .cs-corners:before {
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        opacity: 1;
+        display: block;
+        border: 2px solid #fff;
+        border-top: none;
+        border-right: none;
+        max-height: var(--cornerHeight);
+        height: 35%;
+        max-width: var(--cornerWidth);
+        width: 35%;
+    }
+    #hero-1617 .cs-corners:after {
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: "";
+        opacity: 1;
+        display: block;
+        border: 2px solid #fff;
+        border-top: none;
+        border-left: none;
+        max-height: var(--cornerHeight);
+        height: 35%;
+        max-width: var(--cornerWidth);
+        width: 35%;
+    }
+    #hero-1617 .cs-topper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: clamp(0.8125rem, 1.5vw, 1rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        color: var(--primary);
+        text-align: center;
+        gap: 0.5rem;
+    }
+    #hero-1617 .cs-chevron {
+        --chevronColor: var(--primary);
+        height: auto;
+        width: 3rem;
+    }
+    #hero-1617 .cs-title {
+        position: relative;
+        margin: 0 0 1rem 0;
+        max-width: 51.8125rem;
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+    #hero-1617 .cs-text {
+        margin: 0 auto 0;
+        margin-bottom: 2.5rem;
+        max-width: clamp(29rem, 60vw, 38.785rem);
+        width: 100%;
+        font-size: clamp(1rem, 1.95vw, 1.25rem);
+        line-height: 1.5em;
+        color: #fff;
+        text-align: center;
+    }
+    #hero-1617 .cs-button-solid {
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        background-color: var(--primary);
+        min-width: 12.5rem;
+        box-sizing: border-box;
+        padding: 0 1.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        font-weight: 700;
+        color: #1a1a1a;
+        text-align: center;
+    }
+    #hero-1617 .cs-button-solid:before {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        opacity: 1;
+        background: #fff;
+        height: 100%;
+        width: 0%;
+        transition: width 0.3s;
+    }
+    #hero-1617 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #hero-1617 .cs-background {
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    #hero-1617 .cs-background:before {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        opacity: 0.8;
+        display: block;
+        background: #111926;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+    }
+    #hero-1617 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #hero-1617 .cs-background:before {
+        opacity: 0.9;
+    }
+}
+@media only screen and (min-width: 0rem) {
+    #sbs-1456 {
+        z-index: 1;
+        position: relative;
+        padding: var(--sectionPadding);
+    }
+    #sbs-1456 .cs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        max-width: 80rem;
+        width: 100%;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #sbs-1456 .cs-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 32.625rem;
+        width: 100%;
+        text-align: left;
+    }
+    #sbs-1456 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #sbs-1456 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #sbs-1456 .cs-image-group {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: clamp(15rem, 62vw, 21rem) clamp(12rem, 59vw, 20rem);
+        max-width: 32.625rem;
+        width: 100%;
+        row-gap: 1rem;
+        column-gap: 0.5rem;
+    }
+    #sbs-1456 .cs-picture {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+    #sbs-1456 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #sbs-1456 .cs-picture1 {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    #sbs-1456 .cs-picture2 {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+    #sbs-1456 .cs-picture3 {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+    @media only screen and (min-width: 64rem) {
+        #sbs-1456 .cs-container {
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 3.25rem;
+        }
+        #sbs-1456 .cs-content {
+            width: 40%;
+            padding: 3rem 0;
+            flex: none;
+            align-self: center;
+        }
+        #sbs-1456 .cs-image-group {
+            grid-template-rows: 30rem 18rem;
+            margin-top: 2rem;
+            max-width: none;
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #sbs-1456 .cs-title,
+        body.dark-mode #sbs-1456 .cs-text,
+        body.dark-mode #sbs-1456 .cs-li {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbs-1456 .cs-title:before,
+        body.dark-mode #sbs-1456 .cs-text:before,
+        body.dark-mode #sbs-1456 .cs-li:before {
+            background-color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbs-1456 .cs-background:before {
+            background-color: var(--dark);
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        #amenities {
+            z-index: 1;
+            position: relative;
+            padding: var(--sectionPadding);
+        }
+        #amenities .cs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            max-width: 80rem;
+            width: 100%;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+        #amenities .cs-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 32.625rem;
+            width: 100%;
+            text-align: left;
+        }
+        #amenities .cs-text {
+            margin-bottom: 1rem;
+        }
+        #amenities .cs-text:last-of-type {
+            margin-bottom: 2rem;
+        }
+        #amenities .cs-image-group {
+            position: relative;
+            height: 45.5625em;
+            width: 44.625em;
+            font-size: min(2vw, 0.83em);
+        }
+        #amenities .cs-picture {
+            position: absolute;
+            display: block;
+            overflow: hidden;
+        }
+        #amenities .cs-picture img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #amenities .cs-picture1 {
+            z-index: 2;
+            top: 9em;
+            left: -1em;
+            height: 16.875em;
+            width: 26.25em;
+        }
+        #amenities .cs-picture2 {
+            z-index: 1;
+            top: 6em;
+            right: -1em;
+            height: 20em;
+            width: 20em;
+        }
+        #amenities .cs-picture3 {
+            bottom: 0em;
+            right: 0;
+            height: 22em;
+            width: 39em;
+        }
+        #amenities .cs-background {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        #amenities .cs-background:before {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            opacity: 0.94;
+            display: block;
+            background: #fff;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+        }
+        #amenities .cs-background img {
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    @media only screen and (min-width: 64rem) {
+        #amenities .cs-container {
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 3.25rem;
+        }
+        #amenities .cs-content {
+            width: 40%;
+            padding: 3rem 0;
+            flex: none;
+            align-self: center;
+        }
+        #amenities .cs-image-group {
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 8rem;
+            height: 45em;
+            max-width: 46.25rem;
+            width: 50vw;
+            font-size: min(1.3vw, 1rem);
+            flex: none;
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #amenities .cs-title,
+        body.dark-mode #amenities .cs-text,
+        body.dark-mode #amenities .cs-li {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #amenities .cs-title:before,
+        body.dark-mode #amenities .cs-text:before,
+        body.dark-mode #amenities .cs-li:before {
+            background-color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #amenities .cs-h3 {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #amenities .cs-item-text {
+            opacity: 0.8;
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #amenities .cs-icon {
+            filter: brightness(125%);
+        }
+        body.dark-mode #amenities .cs-background:before {
+            background-color: var(--dark);
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        #sbs-1640 {
+            background-color: #111926;
+            overflow: hidden;
+            padding: var(--sectionPadding);
+        }
+        #sbs-1640 .cs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            max-width: 36.5rem;
+            width: 100%;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+        #sbs-1640 .cs-content {
+            z-index: 10;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 39.375rem;
+            width: 100%;
+            text-align: left;
+        }
+        #sbs-1640 .cs-title {
+            margin: 0 0 2.5rem 0;
+            color: var(--bodyTextColorWhite);
+        }
+        #sbs-1640 .cs-text {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+            color: var(--bodyTextColorWhite);
+        }
+        #sbs-1640 .cs-bullet-list .cs-h3 {
+            color: var(--bodyTextColorWhite);
+        }
+        #sbs-1640 .cs-bullet-list .cs-item-text {
+            opacity: 0.8;
+            color: var(--bodyTextColorWhite);
+        }
+        #sbs-1640 .cs-picture {
+            z-index: 1;
+            position: relative;
+            display: block;
+            min-height: 26.25rem;
+            height: auto;
+            width: 100%;
+        }
+        #sbs-1640 .cs-picture iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #sbs-1640 .cs-stats-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            max-width: 35.625rem;
+            width: 100%;
+        }
+        #sbs-1640 .cs-stats {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            margin: 0;
+            max-width: 39.375rem;
+            width: 100%;
+            padding: 0;
+            row-gap: 1.5rem;
+            column-gap: 0.75rem;
+        }
+        #sbs-1640 .cs-stat {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            grid-column: span 4;
+            align-self: stretch;
+        }
+        #sbs-1640 .cs-number {
+            display: block;
+            margin: 0 0 0.25rem 0;
+            font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+            line-height: 1.2em;
+            font-weight: 900;
+            color: var(--bodyTextColorWhite);
+            text-align: left;
+        }
+        #sbs-1640 .cs-desc {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5em;
+            font-weight: 700;
+            color: var(--primary);
+            text-align: left;
+        }
+    }
+    @media only screen and (min-width: 48rem) {
+        #sbs-1640 .cs-container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            max-width: 80rem;
+        }
+        #sbs-1640 .cs-stats-group {
+            z-index: 1;
+            position: relative;
+            margin-bottom: clamp(3.25rem, 7vw, 5.625rem);
+            padding-top: clamp(3.75rem, 10vw, 7.5rem);
+            padding-bottom: clamp(3.75rem, 8vw, 5rem);
+        }
+        #sbs-1640 .cs-stats-group:before {
+            z-index: -1;
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            content: "";
+            opacity: 1;
+            transform: translateX(-50%);
+            display: block;
+            background: #fff;
+            height: 100%;
+            width: 200vw;
+        }
+        #sbs-1640 .cs-picture {
+            height: 100%;
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #sbs-1640 {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        body.dark-mode #sbs-1640 .cs-stats-group:before {
+            background-color: var(--dark);
+        }
+        body.dark-mode #sbs-1640 .cs-h3 {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbs-1640 .cs-item-text {
+            opacity: 0.8;
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbs-1640 .cs-icon {
+            filter: brightness(125%);
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        #sbsr-1162 {
+            overflow: hidden;
+            padding: var(--sectionPadding);
+            padding-top: 0;
+        }
+        #sbsr-1162 .cs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            max-width: 34.375rem;
+            width: 100%;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+        #sbsr-1162 .cs-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 33.875rem;
+            width: 100%;
+            text-align: left;
+        }
+        #sbsr-1162 .cs-text {
+            margin-bottom: 1rem;
+        }
+        #sbsr-1162 .cs-text:last-of-type {
+            margin-bottom: 2rem;
+        }
+        #sbsr-1162 .cs-image-group {
+            z-index: 1;
+            position: relative;
+            display: block;
+            height: 36.75em;
+            width: 42.375em;
+            font-size: min(2.15vw, 0.8em);
+        }
+        #sbsr-1162 .cs-picture {
+            position: absolute;
+        }
+        #sbsr-1162 .cs-picture img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #sbsr-1162 .cs-picture1 {
+            z-index: 10;
+            top: 0;
+            right: 0;
+            height: 66.326531%;
+            width: 39.375em;
+        }
+        #sbsr-1162 .cs-picture2 {
+            z-index: 10;
+            bottom: 0;
+            left: 0;
+            height: 51.020408%;
+            width: 28.8125em;
+        }
+        #sbsr-1162 .cs-graphic {
+            position: absolute;
+            height: auto;
+        }
+        #sbsr-1162 .cs-graphic1 {
+            top: 1.25em;
+            left: -3.75em;
+            transform: rotate(-165deg);
+            width: 72.125em;
+        }
+        #sbsr-1162 .cs-graphic2 {
+            top: 11.5625em;
+            left: -1.5625em;
+            width: 67.8125em;
+        }
+        #sbsr-1162 .cs-box {
+            z-index: 20;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--primary);
+            height: 30.272109%;
+            width: 12.3125em;
+            box-sizing: border-box;
+            padding: 0.5rem;
+        }
+        #sbsr-1162 .cs-number {
+            display: block;
+            margin: 0 0 clamp(0.25rem, 1vw, 0.5rem);
+            width: 100%;
+            font-size: clamp(1.25rem, 4vw, 2.4375rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            color: var(--bodyTextColorWhite);
+            text-align: center;
+        }
+        #sbsr-1162 .cs-desc {
+            display: block;
+            margin: 0;
+            max-width: 12ch;
+            width: 100%;
+            font-size: clamp(0.75rem, 1.9vw, 1rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            color: var(--bodyTextColorWhite);
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 64rem) {
+        #sbsr-1162 .cs-container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            max-width: 80rem;
+        }
+        #sbsr-1162 .cs-image-group {
+            order: 2;
+            height: auto;
+            font-size: min(1.2vw, 1em);
+            flex: none;
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #sbsr-1162 .cs-title,
+        body.dark-mode #sbsr-1162 .cs-text,
+        body.dark-mode #sbsr-1162 .cs-h3,
+        body.dark-mode #sbsr-1162 .cs-li {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #sbsr-1162 .cs-text,
+        body.dark-mode #sbsr-1162 .cs-li {
+            opacity: 0.8;
+        }
+        body.dark-mode #sbsr-1162 .cs-graphic {
+            opacity: 0.1;
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        #contact-1150 {
+            z-index: 1;
+            position: relative;
+            background-color: #f7f7f7;
+            padding: var(--sectionPadding);
+        }
+        #contact-1150 .cs-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            margin: auto;
+            max-width: 44rem;
+            width: 100%;
+            column-gap: auto;
+            row-gap: clamp(3rem, 6vw, 5rem);
+        }
+        #contact-1150 .cs-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        #contact-1150 .cs-title {
+            margin: 0;
+            max-width: 23ch;
+        }
+        #contact-1150 .cs-text {
+            margin-bottom: 1rem;
+        }
+        #contact-1150 .cs-text:last-of-type {
+            margin-bottom: 32/16rem;
+        }
+        #contact-1150 .cs-picture {
+            position: relative;
+            display: block;
+            margin: 0 0 1.5rem;
+            height: clamp(15rem, 35vw, 18.75rem);
+            width: 100%;
+            overflow: hidden;
+        }
+        #contact-1150 .cs-picture img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #contact-1150 .cs-contact-text {
+            margin: 0 0 1.5rem;
+            font-size: 1rem;
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            text-align: left;
+        }
+        #contact-1150 .cs-ul {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0;
+            gap: 1.5rem;
+        }
+        #contact-1150 .cs-li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            list-style: none;
+            gap: 1.25rem;
+        }
+        #contact-1150 .cs-li:hover .cs-icon-wrapper {
+            transform: scale(1.1);
+        }
+        #contact-1150 .cs-header {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1.2em;
+            font-weight: 700;
+            color: var(--headerColor);
+        }
+        #contact-1150 .cs-link {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            font-size: 1rem;
+            line-height: 1.5em;
+            color: #767676;
+        }
+        #contact-1150 .cs-link:hover {
+            text-decoration: underline;
+        }
+        #contact-1150 .cs-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #bababa;
+            border-radius: 50%;
+            margin: 0;
+            height: 3.75rem;
+            width: 3.75rem;
+            transition: transform 0.3s;
+            flex: none;
+        }
+        #contact-1150 .cs-icon {
+            display: block;
+            height: auto;
+            width: 1.5rem;
+        }
+    }
+    @media only screen and (min-width: 64rem) {
+        #contact-1150 .cs-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 80rem;
+        }
+        #contact-1150 .cs-contact-group {
+            max-width: 39.375rem;
+            width: 50%;
+        }
+    }
+    @media only screen and (min-width: 0rem) {
+        body.dark-mode #contact-1150 {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        body.dark-mode #contact-1150 .cs-title,
+        body.dark-mode #contact-1150 .cs-text,
+        body.dark-mode #contact-1150 .cs-header,
+        body.dark-mode #contact-1150 .cs-link,
+        body.dark-mode #contact-1150 .cs-label,
+        body.dark-mode #contact-1150 .cs-contact-text {
+            color: var(--bodyTextColorWhite);
+        }
+        body.dark-mode #contact-1150 .cs-contact-text,
+        body.dark-mode #contact-1150 .cs-link {
+            opacity: 0.8;
+        }
+        body.dark-mode #contact-1150 .cs-topper {
+            color: var(--secondary);
+        }
+        body.dark-mode #contact-1150 .cs-icon-wrapper {
+            border-color: #fff;
+        }
+        body.dark-mode #contact-1150 .cs-icon {
+            filter: grayscale(1) brightness(1000%);
+        }
+        body.dark-mode #contact-1150 .cs-form {
+            background-color: var(--medium);
+        }
+        body.dark-mode #contact-1150 .cs-input {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+        body.dark-mode #contact-1150 .cs-input::placeholder {
+            opacity: 0.8;
+            color: #fff;
+        }
+        body.dark-mode #contact-1150 .cs-graphic {
+            opacity: 0.4;
+        }
+    }
