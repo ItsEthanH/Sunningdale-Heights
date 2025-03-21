@@ -12,109 +12,106 @@ permalink: 'contact/'
 
 {% block body %}
 
-<style>
-    @media only screen and (min-width: 64em) {
-    #int-hero {
-        font-size: inherit;
-        height: auto;
-        min-height: 18.75rem;
-        padding-top: 20rem;
-        background-attachment: fixed;
-        padding-block-end: 6.25rem;
-    }
-}
+    <style>
+        @media only screen and (min-width: 64em) {
+            #int-hero {
+                font-size: inherit;
+                height: auto;
+                min-height: 18.75rem;
+                padding-top: 20rem;
+                background-attachment: fixed;
+                padding-block-end: 6.25rem;
+            }
+        }
 
- 
-    .cs-button-solid.desktop {
-        display: inline-block;
-    }
-    .cs-button-solid.mobile {
-    display: none;
-}
+        .cs-button-solid.desktop {
+            display: inline-block;
+        }
+        .cs-button-solid.mobile {
+            display: none;
+        }
 
-@media (max-width: 768px) {
-    .cs-button-solid.desktop {
-        display: none;
-    }
-    .cs-button-solid.mobile {
-    display: inline-block;
-}
+        @media (max-width: 768px) {
+            .cs-button-solid.desktop {
+                display: none;
+            }
+            .cs-button-solid.mobile {
+                display: inline-block;
+            }
 
-}
- 
+        }
+    </style>
 
-</style>
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
 
-<!-- ============================================ -->
-<!--                    LANDING                   -->
-<!-- ============================================ -->
+    <section id="int-hero">
+        <h1 id="home-h">Contact Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+            <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+            <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
 
-<section id="int-hero">
-    <h1 id="home-h">Contact Us</h1>
-    <picture>
-        <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
-        <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
-        <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-    </picture>
-</section>
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
 
-<!-- ============================================ -->
-<!--                   Contact                    -->
-<!-- ============================================ -->
-
-<section id="contact-1150">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Inquire</span>
-            <h2 class="cs-title">Contact Us For More Details</h2>
-        </div>
-        <div class="cs-contact-group">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{{'/assets/images/contact.jpg '| url }}">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="{{'/assets/images/contact.jpg' | url }}">
-                <img loading="lazy" decoding="async" src="{{'/assets/images/contact.jpg ' | url }}" alt="people" width="630" height="300">
-            </picture>
-            <p class="cs-text">
+    <section id="contact-1150">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Inquire</span>
+                <h2 class="cs-title">Contact Us For More Details</h2>
+            </div>
+            <div class="cs-contact-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{{'/assets/images/Spring Promo 2025 (2).png '| url }}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{{'/assets/images/Spring Promo 2025 (2).png' | url }}">
+                    <img loading="lazy" decoding="async" src="{{'/assets/images/Spring Promo 2025 (2).png ' | url }}" alt="people" width="630" height="300">
+                </picture>
+                <p class="cs-text">
                 Don't miss the chance to become part of the Sunningdale Heights community. Register now for exclusive updates and pricing information. It's time to come home to a new era of living in London, Ontario, where every amenity, including our building amenities, is within your reach.
             </p>
-            <p class="cs-contact-text">
+                <p class="cs-contact-text">
                 Have questions or need more information? Our dedicated team is here to assist you:
             </p>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="{{'/assets/images/location.svg' | url }}" alt="location icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Site Address</span>
-                        <a target="_blank" href="https://maps.app.goo.gl/Yo6HEnoZEvoV2tHb9" class="cs-link">865 Kleinburg Drive, London, Ontario
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper">
+                            <img aria-hidden="true" src="{{'/assets/images/location.svg' | url }}" alt="location icon" class="cs-icon" width="40" height="40" decoding="async">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Site Address</span>
+                            <a target="_blank" href="https://maps.app.goo.gl/Yo6HEnoZEvoV2tHb9" class="cs-link">865 Kleinburg Drive, London, Ontario
                         </a>
-                    </div>
-                </li>
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="{{'/assets/images/mech-phone.svg' | url }}" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Phone</span>
-                        <a href="tel:365-675-1698" class="cs-link">365-675-1698
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper">
+                            <img aria-hidden="true" src="{{'/assets/images/mech-phone.svg' | url }}" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Phone</span>
+                            <a href="tel:365-675-1698" class="cs-link">365-675-1698
                         </a>
-                    </div>
-                </li>
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="{{'/assets/images/mail.svg' | url }}" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Email</span>
-                        <a href="mailto:rentals@sunningdaleheights.com" class="cs-link">rentals@sunningdaleheights.com</a>
-                    </div>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper">
+                            <img aria-hidden="true" src="{{'/assets/images/mail.svg' | url }}" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Email</span>
+                            <a href="mailto:rentals@sunningdaleheights.com" class="cs-link">rentals@sunningdaleheights.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-   
-    </div>
-</section>
+    </section>
 {% endblock %}
