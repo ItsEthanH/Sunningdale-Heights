@@ -1553,6 +1553,9 @@
     #cs-footer-840 .cs-credit {
         text-align: left;
     }
+    #cs-footer-840 .cs-credit:last-of-type {
+        text-align: right;
+    }
     #cs-footer-840 .cs-bottom-links {
         justify-content: flex-end;
     }

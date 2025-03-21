@@ -1,0 +1,183 @@
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #content-page-851 {
+        z-index: 1;
+        position: relative;
+        background-color: #fff;
+        /* clips the wave background from causing overflow issues when it goes off screen */
+        overflow: hidden;
+        padding: var(--sectionPadding);
+    }
+    #content-page-851 .cs-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        max-width: 80rem;
+        width: 100%;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #content-page-851 .cs-content {
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+        max-width: 46.125rem;
+        width: 100%;
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+    }
+    #content-page-851 .cs-title {
+        position: relative;
+        margin: 0 0 1rem 0;
+        max-width: 100%;
+        width: 100%;
+        font-size: var(--headerFontSize);
+        line-height: 1.2em;
+        font-weight: 900;
+        color: var(--headerColor);
+        text-align: inherit;
+    }
+    #content-page-851 h2,
+    #content-page-851 h3,
+    #content-page-851 h4,
+    #content-page-851 h5,
+    #content-page-851 h6 {
+        margin: 0 0 1rem 0;
+        font-weight: 700;
+        color: var(--headerColor);
+        text-align: inherit;
+    }
+    #content-page-851 h2 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    #content-page-851 h3 {
+        font-size: 1.5rem;
+        color: var(--primary);
+    }
+    #content-page-851 h4,
+    #content-page-851 h5,
+    #content-page-851 h6 {
+        font-size: 1.25rem;
+    }
+    #content-page-851 .cs-button-solid {
+        margin-bottom: 2rem;
+    }
+    #content-page-851 .cs-no-margin {
+        margin: 0;
+    }
+    #content-page-851 .cs-color {
+        color: var(--primary);
+    }
+    #content-page-851 p {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        text-align: inherit;
+    }
+    #content-page-851 p:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #content-page-851 p a {
+        text-decoration: underline;
+        font-size: inherit;
+        line-height: inherit;
+        color: var(--primary);
+    }
+    #content-page-851 ol,
+    #content-page-851 ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 2rem 0;
+        padding-left: 1.5rem;
+        color: var(--bodyTextColor);
+        gap: 1rem;
+    }
+    #content-page-851 ul li {
+        position: relative;
+        list-style: none;
+        color: inherit;
+    }
+    #content-page-851 ul li:before {
+        position: absolute;
+        top: 0.625rem;
+        left: -0.75rem;
+        /* custom list bullet */
+        content: "";
+        opacity: 1;
+        display: block;
+        border-radius: 50%;
+        background: currentColor;
+        height: 3px;
+        width: 3px;
+    }
+    #content-page-851 img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    #content-page-851 .cs-image-group {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        max-width: 27.0625rem;
+        width: 50%;
+        gap: 1.25rem;
+    }
+    #content-page-851 .cs-image-group:after {
+        /* colored box */
+        content: "";
+        opacity: 0.15;
+        display: block;
+        border-radius: 0 6.25rem 0 6.25rem;
+        background: var(--primary);
+        /* 177px - 258px */
+        height: clamp(11.0625rem, 19vw, 16.125rem);
+        width: 100%;
+    }
+    #content-page-851 .cs-picture {
+        position: relative;
+        display: block;
+        /* 125px - 200px */
+        border-radius: clamp(7.8125rem, 15vw, 12.5rem) 0 clamp(7.8125rem, 15vw, 12.5rem) 0;
+        /* 300px - 520px */
+        height: clamp(18.75rem, 40vw, 32.5rem);
+        width: 100%;
+        /* prevents border from affecting height and width */
+        box-sizing: border-box;
+        /* clips img tag corners */
+        overflow: hidden;
+        box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
+    }
+    #content-page-851 .cs-picture img {
+        height: 100%;
+        width: 100%;
+        /* makes it act like a background image */
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #content-page-851 .cs-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #content-page-851 .cs-content {
+        margin: 0 auto;
+        width: 100%;
+        flex: none;
+    }
+    #content-page-851 .cs-image-group {
+        display: flex;
+    }
+}
