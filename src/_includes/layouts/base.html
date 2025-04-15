@@ -262,5 +262,43 @@
             </span>
         </div>
 
+        <script src="https://rhenti-widgets.azureedge.net/rhenti-widgets.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                function handleButtonClick(buttonId, action) {
+                    const button = document.getElementById(buttonId);
+                    if (!button) {
+                        console.error("Button with ID '" + buttonId + "' not found.");
+                        return;
+                    }
+
+                    button.addEventListener("click", function (event) {
+                        const rhentiBook = document.querySelector(action);
+                        if (rhentiBook["showModal"]) {
+                            rhentiBook["showModal"] = "false";
+                        }
+                        rhentiBook["showModal"] = "true";
+                    });
+                }
+
+                // Call the function for each button. Add as many as required.
+                handleButtonClick("cs-book-now-1", "rhenti-book");
+                handleButtonClick("cs-book-now-2", "rhenti-book");
+                handleButtonClick("cs-book-now-3", "rhenti-book");
+                handleButtonClick("cs-book-now-4", "rhenti-book");
+                handleButtonClick("cs-book-now-5", "rhenti-book");
+                handleButtonClick("cs-book-now-6", "rhenti-book");
+            });
+        </script>
+        <rhenti-book
+   float-action-button="false"
+   building-id=""
+   whitelabel-id="64ca745b35c22c969b8946bc"
+   button-label=""
+   language="EN"
+   consent-required="true"
+   hide-button="true"
+   ></rhenti-book>
     </body>
 </html>
