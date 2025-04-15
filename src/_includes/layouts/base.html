@@ -43,7 +43,7 @@
         <link rel="stylesheet" href="{{  '/assets/css/form.css' | url }}">
         <!-- <script defer src="{{  '/assets/js/dark.js' | url }}"></script> -->
         <script defer src="{{  '/assets/js/nav.js' | url }}"></script>
-        <script defer src="{{  '/assets/js/form.js' | url }}"></script>
+        {# <script defer src="{{  '/assets/js/form.js' | url }}"></script> #}
 
         <!-- Google Tag Manager -->
         <script>
@@ -289,6 +289,11 @@
                 handleButtonClick("cs-book-now-4", "rhenti-book");
                 handleButtonClick("cs-book-now-5", "rhenti-book");
                 handleButtonClick("cs-book-now-6", "rhenti-book");
+                handleButtonClick("cs-register-now-1", "rhenti-contact");
+                handleButtonClick("cs-register-now-2", "rhenti-contact");
+                handleButtonClick("cs-register-now-3", "rhenti-contact");
+                handleButtonClick("cs-register-now-4", "rhenti-contact");
+                handleButtonClick("cs-register-now-5", "rhenti-contact");
             });
         </script>
         <rhenti-book
@@ -300,5 +305,15 @@
    consent-required="true"
    hide-button="true"
    ></rhenti-book>
+
+        <rhenti-contact
+   whitelabel-id="67f6b0feafd4e2531f119d8f"
+    button-label="Register"
+   building-id=""
+   float-action-button="false"
+   language="EN"
+   hide-button="true"
+
+   ></rhenti-contact>
     </body>
 </html>
