@@ -17,222 +17,119 @@ eleventyNavigation:
     <style>
         a.glightbox {
             text-decoration: none !important;
-            
+
         }
         a p {
             font-weight: bold;
             text-align: center;
         }
     </style>
-    
+
 {% endblock %}
 
 {% block body %}
 
- <!-- ============================================ -->
-<!--                    LANDING                   -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
 
-<section id="int-hero">
-    <h1 id="home-h">Layouts</h1>
-    <picture>
-        <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
-        <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
-        <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-    </picture>
+    <section style="padding-top: 16rem;"  id="int-hero">
+        <h1 id="home-h">Layouts</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+            <source media="(min-width: 601px)" srcset="{{ '/assets/images/20-onebed.jpg' | url }}">
+            <img aria-hidden="true" decoding="async" src="{{ '/assets/images/20-onebed.jpg' | url }}" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
 
-</section>
+    </section>
 
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
 
-<!-- ============================================ -->
-<!--                   Gallery                    -->
-<!-- ============================================ -->
-
-<!--
+    <!--
     To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
 -->
 
-<section id="gallery-1449">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <span class="cs-topper">Layouts</span>
-                <h2 class="cs-title">View layouts of our 1 & 2 Bedroom Units!</h2>
-            </div>
-            <div class="cs-button-group">
-                <button class="cs-button" data-filter="all">
-                    All Layouts
-                </button>
-                <button class="cs-button" data-filter="one-bedroom">
-                    1 Bedroom Layouts
-                </button>
-                <button class="cs-button" data-filter="two-bedroom">
-                    2 Bedroom Layouts
-                </button>
-            </div>
+    <section id="gallery-1449">
+        <div class="cs-container">
+            <rhenti-listings
+      whitelabel-id="67f6b0feafd4e2531f119d8f"
+      building-id=""
+      show-filter="true"
+      show-floorplan="false"
+      allow-chat="true"
+      allow-schedule="true"
+      allow-date="true"
+      language="en"
+      show-half-rooms="false"
+      button-label=""
+    ></rhenti-listings>
         </div>
-
-
-        <div class="cs-gallery">
-            <!-- 1 Bedroom Layouts (1 to 5) -->
-            <a href="{{ '/assets/images/layouts/1.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/1.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/2.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/2.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/3.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/3.jpg' | url }}" alt="gallery" width="305" height="400">
-                <p style="text-decoration: none;">Starting from $2195/month</p>
-            </a>
-            <a href="{{ '/assets/images/layouts/4.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/4.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/5.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="one-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/5.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-
-            <!-- 2 Bedroom Layouts (6 to 30) -->
-            <a href="{{ '/assets/images/layouts/6.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/6.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/7.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/7.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/8.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/8.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/9.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/9.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/10.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/10.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/11.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/11.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/12.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/12.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/13.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/13.jpg' | url }}" alt="gallery" width="305" height="400">
-                <p>Starting from $2760/month</p>
-            </a>
-            <a href="{{ '/assets/images/layouts/14.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/14.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/15.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/15.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/16.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/16.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/17.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/17.jpg' | url }}" alt="gallery" width="305" height="400">
-                <p>Starting from $2425/month</p>
-            </a>
-            <a href="{{ '/assets/images/layouts/18.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/18.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/19.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/19.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/20.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/20.jpg' | url }}" alt="gallery" width="305" height="400">
-                <p>Starting from $2460/month</p>
-            </a>
-            <a href="{{ '/assets/images/layouts/21.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/21.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/22.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/22.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/23.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/23.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/24.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/24.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/25.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/25.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/26.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/26.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/27.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/27.jpg' | url }}" alt="gallery" width="305" height="400">
-                <p>Starting from $2460/month</p>
-            </a>
-            <a href="{{ '/assets/images/layouts/28.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/28.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/29.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/29.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-            <a href="{{ '/assets/images/layouts/30.jpg' | url }}" class="glightbox" data-gallery="gallery-all" data-category="two-bedroom">
-                <img loading="lazy" decoding="async" src="{{ '/assets/images/layouts/30.jpg' | url }}" alt="gallery" width="305" height="400">
-            </a>
-        </div>
-    </div>
-
-
 
     </div>
 </section>
- 
+
 <script>
-    
-    const lightbox = GLightbox({
-    selector: '.glightbox'
-});
 
-class GalleryFilter {
-    filtersSelector = '.cs-button';
-    imagesSelector = '.cs-gallery a';
-    activeClass = 'cs-active';
-    hiddenClass = 'cs-hidden';
+    const lightbox = GLightbox({selector: '.glightbox'});
 
-    constructor() {
-        const $filters = document.querySelectorAll(this.filtersSelector);
-        this.$activeFilter = $filters[0];
-        this.$images = document.querySelectorAll(this.imagesSelector);
+    class GalleryFilter {
+        filtersSelector = '.cs-button';
+        imagesSelector = '.cs-gallery a';
+        activeClass = 'cs-active';
+        hiddenClass = 'cs-hidden';
 
-        this.$activeFilter.classList.add(this.activeClass);
+        constructor() {
+            const $filters = document.querySelectorAll(this.filtersSelector);
+            this.$activeFilter = $filters[0];
+            this.$images = document.querySelectorAll(this.imagesSelector);
 
-        for (const $filter of $filters) {
-            $filter.addEventListener('click', () => this.onClick($filter));
+            this
+                .$activeFilter
+                .classList
+                .add(this.activeClass);
+
+            for (const $filter of $filters) {
+                $filter.addEventListener('click', () => this.onClick($filter));
+            }
+        }
+
+        onClick($filter) {
+            this.filter($filter.dataset.filter);
+
+            const {activeClass} = this;
+
+            this
+                .$activeFilter
+                .classList
+                .remove(activeClass);
+            $filter
+                .classList
+                .add(activeClass);
+
+            this.$activeFilter = $filter;
+        }
+
+        filter(filter) {
+            const showAll = filter === 'all';
+
+            for (const $image of this.$images) {
+                const category = $image.getAttribute('data-category');
+                const show = showAll || category === filter;
+
+                $image.style.display = show
+                    ? 'inline-block'
+                    : 'none';
+            }
         }
     }
 
-    onClick($filter) {
-        this.filter($filter.dataset.filter);
-
-        const { activeClass } = this;
-
-        this.$activeFilter.classList.remove(activeClass);
-        $filter.classList.add(activeClass);
-
-        this.$activeFilter = $filter;
-    }
-
-    filter(filter) {
-        const showAll = filter === 'all';
-
-        for (const $image of this.$images) {
-            const category = $image.getAttribute('data-category');
-            const show = showAll || category === filter;
-
-            $image.style.display = show ? 'inline-block' : 'none';
-        }
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    new GalleryFilter();
-});
-     
+    document.addEventListener('DOMContentLoaded', () => {
+        new GalleryFilter();
+    });
 </script>
 
-    {% include 'components/cta.html' %}
+{% include 'components/cta.html' %}
 
 {% endblock %}
